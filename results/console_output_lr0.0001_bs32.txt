@@ -1,0 +1,1523 @@
+learning rate  : 0.0001
+batch_size : 32
+len(df_train): 8912
+len(df_val): 1103
+df_train[cell_type].value_counts() : cell_type
+dermatofibroma                    6402
+Benign keratosis-like lesions     6066
+Melanocytic nevi                  5822
+Dermatofibroma                    5457
+Vascular lesions                  5289
+Basal cell carcinoma              5269
+Actinic keratoses                 4752
+Name: count, dtype: int64
+
+
+
+
+
+ ## running model      :    ViTForImageClassification2        ## 
+
+
+
+ == ViTForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.52531], [train acc 0.81334]
+[epoch 1], [val loss 0.29094], [val acc 0.90167]
+*****************************************************
+best record: [epoch 1], [val loss 0.29094], [val acc 0.90167]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.18306], [train acc 0.93463]
+[epoch 2], [val loss 0.26296], [val acc 0.92310]
+*****************************************************
+best record: [epoch 2], [val loss 0.26296], [val acc 0.92310]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.11266], [train acc 0.95925]
+[epoch 3], [val loss 0.37226], [val acc 0.88905]
+[epoch 4], [iter 1000 / 1221], [train loss 0.07573], [train acc 0.97434]
+[epoch 4], [val loss 0.34853], [val acc 0.90423]
+[epoch 5], [iter 1000 / 1221], [train loss 0.06496], [train acc 0.97728]
+[epoch 5], [val loss 0.34771], [val acc 0.91583]
+[epoch 6], [iter 1000 / 1221], [train loss 0.05519], [train acc 0.98172]
+[epoch 6], [val loss 0.41553], [val acc 0.89173]
+[epoch 7], [iter 1000 / 1221], [train loss 0.04503], [train acc 0.98472]
+[epoch 7], [val loss 0.35042], [val acc 0.91304]
+[epoch 8], [iter 1000 / 1221], [train loss 0.03720], [train acc 0.98800]
+[epoch 8], [val loss 0.44741], [val acc 0.90435]
+[epoch 9], [iter 1000 / 1221], [train loss 0.03699], [train acc 0.98731]
+[epoch 9], [val loss 0.39739], [val acc 0.90435]
+[epoch 10], [iter 1000 / 1221], [train loss 0.03486], [train acc 0.98806]
+[epoch 10], [val loss 0.42765], [val acc 0.90256]
+[epoch 11], [iter 1000 / 1221], [train loss 0.03093], [train acc 0.98969]
+[epoch 11], [val loss 0.40609], [val acc 0.92042]
+[epoch 12], [iter 1000 / 1221], [train loss 0.03024], [train acc 0.99038]
+[epoch 12], [val loss 0.41146], [val acc 0.90958]
+[epoch 13], [iter 1000 / 1221], [train loss 0.03332], [train acc 0.98925]
+[epoch 13], [val loss 0.40132], [val acc 0.91226]
+[epoch 14], [iter 1000 / 1221], [train loss 0.02419], [train acc 0.99175]
+[epoch 14], [val loss 0.45232], [val acc 0.90524]
+[epoch 15], [iter 1000 / 1221], [train loss 0.02640], [train acc 0.99141]
+[epoch 15], [val loss 0.42693], [val acc 0.91685]
+[epoch 16], [iter 1000 / 1221], [train loss 0.02420], [train acc 0.99225]
+[epoch 16], [val loss 0.40088], [val acc 0.91494]
+[epoch 17], [iter 1000 / 1221], [train loss 0.02594], [train acc 0.99203]
+[epoch 17], [val loss 0.45560], [val acc 0.90256]
+[epoch 18], [iter 1000 / 1221], [train loss 0.01683], [train acc 0.99459]
+[epoch 18], [val loss 0.42156], [val acc 0.91417]
+[epoch 19], [iter 1000 / 1221], [train loss 0.02159], [train acc 0.99303]
+[epoch 19], [val loss 0.43667], [val acc 0.90958]
+[epoch 20], [iter 1000 / 1221], [train loss 0.02069], [train acc 0.99331]
+[epoch 20], [val loss 0.41647], [val acc 0.90780]
+[epoch 21], [iter 1000 / 1221], [train loss 0.01877], [train acc 0.99416]
+[epoch 21], [val loss 0.44784], [val acc 0.90423]
+[epoch 22], [iter 1000 / 1221], [train loss 0.02154], [train acc 0.99347]
+[epoch 22], [val loss 0.40114], [val acc 0.91238]
+[epoch 23], [iter 1000 / 1221], [train loss 0.01474], [train acc 0.99587]
+[epoch 23], [val loss 0.38457], [val acc 0.91506]
+[epoch 24], [iter 1000 / 1221], [train loss 0.02109], [train acc 0.99347]
+[epoch 24], [val loss 0.42753], [val acc 0.90690]
+[epoch 25], [iter 1000 / 1221], [train loss 0.01820], [train acc 0.99450]
+[epoch 25], [val loss 0.45850], [val acc 0.90613]
+[epoch 26], [iter 1000 / 1221], [train loss 0.01874], [train acc 0.99416]
+[epoch 26], [val loss 0.43316], [val acc 0.91685]
+[epoch 27], [iter 1000 / 1221], [train loss 0.02052], [train acc 0.99362]
+[epoch 27], [val loss 0.44178], [val acc 0.90702]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01520], [train acc 0.99522]
+[epoch 28], [val loss 0.41470], [val acc 0.91238]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01507], [train acc 0.99525]
+[epoch 29], [val loss 0.44561], [val acc 0.90512]
+[epoch 30], [iter 1000 / 1221], [train loss 0.01369], [train acc 0.99591]
+[epoch 30], [val loss 0.48267], [val acc 0.90333]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.69      0.60      0.64        30
+         bcc       0.77      0.86      0.81        35
+         bkl       0.65      0.58      0.61        88
+          df       0.80      0.50      0.62         8
+          nv       0.97      0.96      0.96       883
+        vasc       1.00      0.85      0.92        13
+         mel       0.42      0.59      0.49        46
+
+    accuracy                           0.90      1103
+   macro avg       0.76      0.70      0.72      1103
+weighted avg       0.90      0.90      0.90      1103
+
+Confusion Matrix:
+[[ 18   2   6   0   0   0   4]
+ [  1  30   3   0   0   0   1]
+ [  5   4  51   0  13   0  15]
+ [  1   0   0   4   3   0   0]
+ [  1   2  13   0 850   0  17]
+ [  0   0   0   1   1  11   0]
+ [  0   1   5   0  13   0  27]]
+== On test data ==
+Test Accuracy: 89.8459%
+Precision: 0.7576
+Recall: 0.7046
+F1 Score: 0.7222
+finished with : ViTForImageClassification2
+
+
+
+
+
+ ## running model      :    ConvNextV2ForImageClassification        ## 
+
+
+
+ == ConvNextV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.47978], [train acc 0.82278]
+[epoch 1], [val loss 0.30023], [val acc 0.89351]
+*****************************************************
+best record: [epoch 1], [val loss 0.30023], [val acc 0.89351]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.14299], [train acc 0.94844]
+[epoch 2], [val loss 0.31616], [val acc 0.89452]
+*****************************************************
+best record: [epoch 2], [val loss 0.31616], [val acc 0.89452]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.08654], [train acc 0.96956]
+[epoch 3], [val loss 0.28930], [val acc 0.91685]
+*****************************************************
+best record: [epoch 3], [val loss 0.28930], [val acc 0.91685]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.06585], [train acc 0.97709]
+[epoch 4], [val loss 0.36878], [val acc 0.90089]
+[epoch 5], [iter 1000 / 1221], [train loss 0.05034], [train acc 0.98253]
+[epoch 5], [val loss 0.38608], [val acc 0.91048]
+[epoch 6], [iter 1000 / 1221], [train loss 0.03986], [train acc 0.98641]
+[epoch 6], [val loss 0.37419], [val acc 0.92119]
+*****************************************************
+best record: [epoch 6], [val loss 0.37419], [val acc 0.92119]
+*****************************************************
+[epoch 7], [iter 1000 / 1221], [train loss 0.03453], [train acc 0.98772]
+[epoch 7], [val loss 0.32090], [val acc 0.92220]
+*****************************************************
+best record: [epoch 7], [val loss 0.32090], [val acc 0.92220]
+*****************************************************
+[epoch 8], [iter 1000 / 1221], [train loss 0.03151], [train acc 0.98944]
+[epoch 8], [val loss 0.44228], [val acc 0.91417]
+[epoch 9], [iter 1000 / 1221], [train loss 0.02947], [train acc 0.99028]
+[epoch 9], [val loss 0.37152], [val acc 0.90881]
+[epoch 10], [iter 1000 / 1221], [train loss 0.02656], [train acc 0.99113]
+[epoch 10], [val loss 0.34144], [val acc 0.91595]
+[epoch 11], [iter 1000 / 1221], [train loss 0.02469], [train acc 0.99175]
+[epoch 11], [val loss 0.41237], [val acc 0.92131]
+[epoch 12], [iter 1000 / 1221], [train loss 0.02668], [train acc 0.99119]
+[epoch 12], [val loss 0.38079], [val acc 0.90780]
+[epoch 13], [iter 1000 / 1221], [train loss 0.02210], [train acc 0.99244]
+[epoch 13], [val loss 0.43793], [val acc 0.91238]
+[epoch 14], [iter 1000 / 1221], [train loss 0.02410], [train acc 0.99256]
+[epoch 14], [val loss 0.38472], [val acc 0.92488]
+*****************************************************
+best record: [epoch 14], [val loss 0.38472], [val acc 0.92488]
+*****************************************************
+[epoch 15], [iter 1000 / 1221], [train loss 0.02036], [train acc 0.99322]
+[epoch 15], [val loss 0.36808], [val acc 0.91685]
+[epoch 16], [iter 1000 / 1221], [train loss 0.01693], [train acc 0.99413]
+[epoch 16], [val loss 0.55760], [val acc 0.90435]
+[epoch 17], [iter 1000 / 1221], [train loss 0.02002], [train acc 0.99394]
+[epoch 17], [val loss 0.37769], [val acc 0.92756]
+*****************************************************
+best record: [epoch 17], [val loss 0.37769], [val acc 0.92756]
+*****************************************************
+[epoch 18], [iter 1000 / 1221], [train loss 0.01558], [train acc 0.99516]
+[epoch 18], [val loss 0.33507], [val acc 0.91940]
+[epoch 19], [iter 1000 / 1221], [train loss 0.01749], [train acc 0.99387]
+[epoch 19], [val loss 0.41114], [val acc 0.91863]
+[epoch 20], [iter 1000 / 1221], [train loss 0.01571], [train acc 0.99472]
+[epoch 20], [val loss 0.41393], [val acc 0.91863]
+[epoch 21], [iter 1000 / 1221], [train loss 0.01820], [train acc 0.99413]
+[epoch 21], [val loss 0.38378], [val acc 0.92667]
+[epoch 22], [iter 1000 / 1221], [train loss 0.01596], [train acc 0.99531]
+[epoch 22], [val loss 0.39584], [val acc 0.92310]
+[epoch 23], [iter 1000 / 1221], [train loss 0.01043], [train acc 0.99681]
+[epoch 23], [val loss 0.43964], [val acc 0.91506]
+[epoch 24], [iter 1000 / 1221], [train loss 0.01234], [train acc 0.99581]
+[epoch 24], [val loss 0.37959], [val acc 0.93024]
+*****************************************************
+best record: [epoch 24], [val loss 0.37959], [val acc 0.93024]
+*****************************************************
+[epoch 25], [iter 1000 / 1221], [train loss 0.01459], [train acc 0.99528]
+[epoch 25], [val loss 0.39111], [val acc 0.91952]
+[epoch 26], [iter 1000 / 1221], [train loss 0.01435], [train acc 0.99587]
+[epoch 26], [val loss 0.45163], [val acc 0.91506]
+[epoch 27], [iter 1000 / 1221], [train loss 0.01311], [train acc 0.99572]
+[epoch 27], [val loss 0.43537], [val acc 0.91417]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01520], [train acc 0.99538]
+[epoch 28], [val loss 0.44056], [val acc 0.91685]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01211], [train acc 0.99619]
+[epoch 29], [val loss 0.41809], [val acc 0.91851]
+[epoch 30], [iter 1000 / 1221], [train loss 0.01063], [train acc 0.99669]
+[epoch 30], [val loss 0.36840], [val acc 0.92488]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.89      0.57      0.69        30
+         bcc       0.94      0.91      0.93        35
+         bkl       0.76      0.70      0.73        88
+          df       1.00      0.75      0.86         8
+          nv       0.97      0.98      0.97       883
+        vasc       1.00      0.69      0.82        13
+         mel       0.53      0.72      0.61        46
+
+    accuracy                           0.93      1103
+   macro avg       0.87      0.76      0.80      1103
+weighted avg       0.93      0.93      0.93      1103
+
+Confusion Matrix:
+[[ 17   0   5   0   3   0   5]
+ [  0  32   2   0   1   0   0]
+ [  1   0  62   0  10   0  15]
+ [  1   0   0   6   1   0   0]
+ [  0   2   9   0 863   0   9]
+ [  0   0   1   0   3   9   0]
+ [  0   0   3   0  10   0  33]]
+== On test data ==
+Test Accuracy: 92.6564%
+Precision: 0.8704
+Recall: 0.7604
+F1 Score: 0.8015
+finished with : ConvNextV2ForImageClassification
+
+
+
+
+
+ ## running model      :    Swinv2ForImageClassification        ## 
+
+
+
+ == Swinv2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.63959], [train acc 0.75772]
+[epoch 1], [val loss 0.40138], [val acc 0.83929]
+*****************************************************
+best record: [epoch 1], [val loss 0.40138], [val acc 0.83929]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.27921], [train acc 0.89412]
+[epoch 2], [val loss 0.26655], [val acc 0.92500]
+*****************************************************
+best record: [epoch 2], [val loss 0.26655], [val acc 0.92500]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.19167], [train acc 0.92856]
+[epoch 3], [val loss 0.30991], [val acc 0.89899]
+[epoch 4], [iter 1000 / 1221], [train loss 0.14928], [train acc 0.94419]
+[epoch 4], [val loss 0.31154], [val acc 0.90244]
+[epoch 5], [iter 1000 / 1221], [train loss 0.11710], [train acc 0.95788]
+[epoch 5], [val loss 0.33059], [val acc 0.90970]
+[epoch 6], [iter 1000 / 1221], [train loss 0.10487], [train acc 0.96331]
+[epoch 6], [val loss 0.32022], [val acc 0.91161]
+[epoch 7], [iter 1000 / 1221], [train loss 0.08848], [train acc 0.96894]
+[epoch 7], [val loss 0.32904], [val acc 0.91952]
+[epoch 8], [iter 1000 / 1221], [train loss 0.08046], [train acc 0.97194]
+[epoch 8], [val loss 0.32119], [val acc 0.92131]
+[epoch 9], [iter 1000 / 1221], [train loss 0.07169], [train acc 0.97509]
+[epoch 9], [val loss 0.31658], [val acc 0.92387]
+[epoch 10], [iter 1000 / 1221], [train loss 0.06900], [train acc 0.97537]
+[epoch 10], [val loss 0.34448], [val acc 0.91685]
+[epoch 11], [iter 1000 / 1221], [train loss 0.05950], [train acc 0.97919]
+[epoch 11], [val loss 0.38747], [val acc 0.91506]
+[epoch 12], [iter 1000 / 1221], [train loss 0.06093], [train acc 0.97778]
+[epoch 12], [val loss 0.37076], [val acc 0.90958]
+[epoch 13], [iter 1000 / 1221], [train loss 0.05564], [train acc 0.98053]
+[epoch 13], [val loss 0.36045], [val acc 0.91685]
+[epoch 14], [iter 1000 / 1221], [train loss 0.05175], [train acc 0.98206]
+[epoch 14], [val loss 0.33895], [val acc 0.92935]
+*****************************************************
+best record: [epoch 14], [val loss 0.33895], [val acc 0.92935]
+*****************************************************
+[epoch 15], [iter 1000 / 1221], [train loss 0.04604], [train acc 0.98506]
+[epoch 15], [val loss 0.32417], [val acc 0.92744]
+[epoch 16], [iter 1000 / 1221], [train loss 0.04330], [train acc 0.98519]
+[epoch 16], [val loss 0.37526], [val acc 0.91851]
+[epoch 17], [iter 1000 / 1221], [train loss 0.04246], [train acc 0.98622]
+[epoch 17], [val loss 0.31241], [val acc 0.92131]
+[epoch 18], [iter 1000 / 1221], [train loss 0.04193], [train acc 0.98522]
+[epoch 18], [val loss 0.37182], [val acc 0.92131]
+[epoch 19], [iter 1000 / 1221], [train loss 0.04241], [train acc 0.98641]
+[epoch 19], [val loss 0.37583], [val acc 0.92131]
+[epoch 20], [iter 1000 / 1221], [train loss 0.04016], [train acc 0.98616]
+[epoch 20], [val loss 0.40173], [val acc 0.91149]
+[epoch 21], [iter 1000 / 1221], [train loss 0.03261], [train acc 0.98859]
+[epoch 21], [val loss 0.35435], [val acc 0.92042]
+[epoch 22], [iter 1000 / 1221], [train loss 0.03585], [train acc 0.98819]
+[epoch 22], [val loss 0.39603], [val acc 0.92488]
+[epoch 23], [iter 1000 / 1221], [train loss 0.03778], [train acc 0.98744]
+[epoch 23], [val loss 0.37843], [val acc 0.91685]
+[epoch 24], [iter 1000 / 1221], [train loss 0.03042], [train acc 0.99000]
+[epoch 24], [val loss 0.32467], [val acc 0.93202]
+*****************************************************
+best record: [epoch 24], [val loss 0.32467], [val acc 0.93202]
+*****************************************************
+[epoch 25], [iter 1000 / 1221], [train loss 0.03265], [train acc 0.98931]
+[epoch 25], [val loss 0.45180], [val acc 0.92577]
+[epoch 26], [iter 1000 / 1221], [train loss 0.03265], [train acc 0.98984]
+[epoch 26], [val loss 0.34985], [val acc 0.92756]
+[epoch 27], [iter 1000 / 1221], [train loss 0.03130], [train acc 0.98938]
+[epoch 27], [val loss 0.35963], [val acc 0.93101]
+[epoch 28], [iter 1000 / 1221], [train loss 0.03057], [train acc 0.99031]
+[epoch 28], [val loss 0.37655], [val acc 0.92667]
+[epoch 29], [iter 1000 / 1221], [train loss 0.02982], [train acc 0.99019]
+[epoch 29], [val loss 0.38562], [val acc 0.92220]
+[epoch 30], [iter 1000 / 1221], [train loss 0.02976], [train acc 0.99047]
+[epoch 30], [val loss 0.38374], [val acc 0.91940]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.75      0.60      0.67        30
+         bcc       0.90      0.77      0.83        35
+         bkl       0.77      0.70      0.73        88
+          df       0.71      0.62      0.67         8
+          nv       0.96      0.98      0.97       883
+        vasc       1.00      0.77      0.87        13
+         mel       0.47      0.50      0.48        46
+
+    accuracy                           0.91      1103
+   macro avg       0.79      0.71      0.75      1103
+weighted avg       0.91      0.91      0.91      1103
+
+Confusion Matrix:
+[[ 18   1   5   0   3   0   3]
+ [  2  27   3   1   1   0   1]
+ [  1   1  62   0  15   0   9]
+ [  0   0   0   5   3   0   0]
+ [  1   0   7   0 862   0  13]
+ [  0   0   0   0   3  10   0]
+ [  2   1   4   1  15   0  23]]
+== On test data ==
+Test Accuracy: 91.2965%
+Precision: 0.7935
+Recall: 0.7066
+F1 Score: 0.7453
+finished with : Swinv2ForImageClassification
+
+
+
+
+
+ ## running model      :    CvtForImageClassification        ## 
+
+
+
+ == CvtForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.89203], [train acc 0.64506]
+[epoch 1], [val loss 0.31108], [val acc 0.89095]
+*****************************************************
+best record: [epoch 1], [val loss 0.31108], [val acc 0.89095]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.58571], [train acc 0.75884]
+[epoch 2], [val loss 0.25729], [val acc 0.90702]
+*****************************************************
+best record: [epoch 2], [val loss 0.25729], [val acc 0.90702]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.51743], [train acc 0.78456]
+[epoch 3], [val loss 0.28186], [val acc 0.90435]
+[epoch 4], [iter 1000 / 1221], [train loss 0.48341], [train acc 0.79800]
+[epoch 4], [val loss 0.35651], [val acc 0.89988]
+[epoch 5], [iter 1000 / 1221], [train loss 0.46154], [train acc 0.80412]
+[epoch 5], [val loss 0.32513], [val acc 0.91952]
+*****************************************************
+best record: [epoch 5], [val loss 0.32513], [val acc 0.91952]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.44914], [train acc 0.81034]
+[epoch 6], [val loss 0.30834], [val acc 0.91595]
+[epoch 7], [iter 1000 / 1221], [train loss 0.43968], [train acc 0.81437]
+[epoch 7], [val loss 0.29905], [val acc 0.92399]
+*****************************************************
+best record: [epoch 7], [val loss 0.29905], [val acc 0.92399]
+*****************************************************
+[epoch 8], [iter 1000 / 1221], [train loss 0.43997], [train acc 0.81334]
+[epoch 8], [val loss 0.36405], [val acc 0.90435]
+[epoch 9], [iter 1000 / 1221], [train loss 0.42993], [train acc 0.81778]
+[epoch 9], [val loss 0.36809], [val acc 0.90179]
+[epoch 10], [iter 1000 / 1221], [train loss 0.41276], [train acc 0.82397]
+[epoch 10], [val loss 0.34450], [val acc 0.90589]
+[epoch 11], [iter 1000 / 1221], [train loss 0.43099], [train acc 0.81463]
+[epoch 11], [val loss 0.39300], [val acc 0.90423]
+[epoch 12], [iter 1000 / 1221], [train loss 0.41797], [train acc 0.81984]
+[epoch 12], [val loss 0.43816], [val acc 0.90435]
+[epoch 13], [iter 1000 / 1221], [train loss 0.41011], [train acc 0.82463]
+[epoch 13], [val loss 0.35569], [val acc 0.91673]
+[epoch 14], [iter 1000 / 1221], [train loss 0.41521], [train acc 0.82178]
+[epoch 14], [val loss 0.36347], [val acc 0.91036]
+[epoch 15], [iter 1000 / 1221], [train loss 0.40685], [train acc 0.82488]
+[epoch 15], [val loss 0.42786], [val acc 0.90512]
+[epoch 16], [iter 1000 / 1221], [train loss 0.42423], [train acc 0.81794]
+[epoch 16], [val loss 0.36293], [val acc 0.92476]
+*****************************************************
+best record: [epoch 16], [val loss 0.36293], [val acc 0.92476]
+*****************************************************
+[epoch 17], [iter 1000 / 1221], [train loss 0.39939], [train acc 0.82803]
+[epoch 17], [val loss 0.34280], [val acc 0.92488]
+*****************************************************
+best record: [epoch 17], [val loss 0.34280], [val acc 0.92488]
+*****************************************************
+[epoch 18], [iter 1000 / 1221], [train loss 0.40555], [train acc 0.82663]
+[epoch 18], [val loss 0.40634], [val acc 0.91494]
+[epoch 19], [iter 1000 / 1221], [train loss 0.40776], [train acc 0.82544]
+[epoch 19], [val loss 0.40527], [val acc 0.91327]
+[epoch 20], [iter 1000 / 1221], [train loss 0.41033], [train acc 0.82384]
+[epoch 20], [val loss 0.43173], [val acc 0.91595]
+[epoch 21], [iter 1000 / 1221], [train loss 0.41428], [train acc 0.82341]
+[epoch 21], [val loss 0.43049], [val acc 0.91673]
+[epoch 22], [iter 1000 / 1221], [train loss 0.40595], [train acc 0.82597]
+[epoch 22], [val loss 0.38637], [val acc 0.92476]
+[epoch 23], [iter 1000 / 1221], [train loss 0.40830], [train acc 0.82581]
+[epoch 23], [val loss 0.42341], [val acc 0.91685]
+[epoch 24], [iter 1000 / 1221], [train loss 0.41102], [train acc 0.82409]
+[epoch 24], [val loss 0.38737], [val acc 0.91774]
+[epoch 25], [iter 1000 / 1221], [train loss 0.39898], [train acc 0.82997]
+[epoch 25], [val loss 0.36095], [val acc 0.92756]
+*****************************************************
+best record: [epoch 25], [val loss 0.36095], [val acc 0.92756]
+*****************************************************
+[epoch 26], [iter 1000 / 1221], [train loss 0.40063], [train acc 0.82872]
+[epoch 26], [val loss 0.48198], [val acc 0.91238]
+[epoch 27], [iter 1000 / 1221], [train loss 0.41233], [train acc 0.82537]
+[epoch 27], [val loss 0.52547], [val acc 0.88613]
+[epoch 28], [iter 1000 / 1221], [train loss 0.40729], [train acc 0.82541]
+[epoch 28], [val loss 0.40300], [val acc 0.92756]
+[epoch 29], [iter 1000 / 1221], [train loss 0.40160], [train acc 0.82903]
+[epoch 29], [val loss 0.42331], [val acc 0.91583]
+[epoch 30], [iter 1000 / 1221], [train loss 0.40946], [train acc 0.82509]
+[epoch 30], [val loss 0.43146], [val acc 0.92131]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.94      0.53      0.68        30
+         bcc       0.69      1.00      0.81        35
+         bkl       0.77      0.82      0.80        88
+          df       0.45      0.62      0.53         8
+          nv       0.98      0.96      0.97       883
+        vasc       0.83      0.77      0.80        13
+         mel       0.46      0.50      0.48        46
+
+    accuracy                           0.92      1103
+   macro avg       0.73      0.74      0.72      1103
+weighted avg       0.93      0.92      0.92      1103
+
+Confusion Matrix:
+[[ 16   6   4   0   1   0   3]
+ [  0  35   0   0   0   0   0]
+ [  1   4  72   1   3   0   7]
+ [  0   0   0   5   2   0   1]
+ [  0   4   8   3 851   1  16]
+ [  0   0   0   2   1  10   0]
+ [  0   2   9   0  11   1  23]]
+== On test data ==
+Test Accuracy: 91.7498%
+Precision: 0.7327
+Recall: 0.7442
+F1 Score: 0.7239
+finished with : CvtForImageClassification
+
+
+
+
+
+ ## running model      :    EfficientFormerForImageClassification        ## 
+
+
+
+ == EfficientFormerForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.57830], [train acc 0.78534]
+[epoch 1], [val loss 0.30484], [val acc 0.89185]
+*****************************************************
+best record: [epoch 1], [val loss 0.30484], [val acc 0.89185]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.20416], [train acc 0.92563]
+[epoch 2], [val loss 0.39961], [val acc 0.89006]
+[epoch 3], [iter 1000 / 1221], [train loss 0.11795], [train acc 0.95709]
+[epoch 3], [val loss 0.32478], [val acc 0.90792]
+*****************************************************
+best record: [epoch 3], [val loss 0.32478], [val acc 0.90792]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.07927], [train acc 0.97228]
+[epoch 4], [val loss 0.37971], [val acc 0.90179]
+[epoch 5], [iter 1000 / 1221], [train loss 0.05611], [train acc 0.98047]
+[epoch 5], [val loss 0.34187], [val acc 0.90970]
+*****************************************************
+best record: [epoch 5], [val loss 0.34187], [val acc 0.90970]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.04368], [train acc 0.98431]
+[epoch 6], [val loss 0.44639], [val acc 0.90256]
+[epoch 7], [iter 1000 / 1221], [train loss 0.03711], [train acc 0.98684]
+[epoch 7], [val loss 0.45645], [val acc 0.89095]
+[epoch 8], [iter 1000 / 1221], [train loss 0.02995], [train acc 0.98972]
+[epoch 8], [val loss 0.44272], [val acc 0.90524]
+[epoch 9], [iter 1000 / 1221], [train loss 0.02530], [train acc 0.99091]
+[epoch 9], [val loss 0.43329], [val acc 0.91149]
+*****************************************************
+best record: [epoch 9], [val loss 0.43329], [val acc 0.91149]
+*****************************************************
+[epoch 10], [iter 1000 / 1221], [train loss 0.02606], [train acc 0.99125]
+[epoch 10], [val loss 0.38972], [val acc 0.91595]
+*****************************************************
+best record: [epoch 10], [val loss 0.38972], [val acc 0.91595]
+*****************************************************
+[epoch 11], [iter 1000 / 1221], [train loss 0.02123], [train acc 0.99313]
+[epoch 11], [val loss 0.49157], [val acc 0.90524]
+[epoch 12], [iter 1000 / 1221], [train loss 0.01837], [train acc 0.99353]
+[epoch 12], [val loss 0.38411], [val acc 0.91929]
+*****************************************************
+best record: [epoch 12], [val loss 0.38411], [val acc 0.91929]
+*****************************************************
+[epoch 13], [iter 1000 / 1221], [train loss 0.01849], [train acc 0.99413]
+[epoch 13], [val loss 0.44934], [val acc 0.92131]
+*****************************************************
+best record: [epoch 13], [val loss 0.44934], [val acc 0.92131]
+*****************************************************
+[epoch 14], [iter 1000 / 1221], [train loss 0.01670], [train acc 0.99441]
+[epoch 14], [val loss 0.47434], [val acc 0.91952]
+[epoch 15], [iter 1000 / 1221], [train loss 0.01583], [train acc 0.99513]
+[epoch 15], [val loss 0.54667], [val acc 0.91149]
+[epoch 16], [iter 1000 / 1221], [train loss 0.01337], [train acc 0.99544]
+[epoch 16], [val loss 0.53242], [val acc 0.91327]
+[epoch 17], [iter 1000 / 1221], [train loss 0.01447], [train acc 0.99500]
+[epoch 17], [val loss 0.45322], [val acc 0.91595]
+[epoch 18], [iter 1000 / 1221], [train loss 0.01041], [train acc 0.99681]
+[epoch 18], [val loss 0.46972], [val acc 0.91863]
+[epoch 19], [iter 1000 / 1221], [train loss 0.01271], [train acc 0.99572]
+[epoch 19], [val loss 0.52109], [val acc 0.90524]
+[epoch 20], [iter 1000 / 1221], [train loss 0.01334], [train acc 0.99541]
+[epoch 20], [val loss 0.47533], [val acc 0.92220]
+*****************************************************
+best record: [epoch 20], [val loss 0.47533], [val acc 0.92220]
+*****************************************************
+[epoch 21], [iter 1000 / 1221], [train loss 0.01250], [train acc 0.99591]
+[epoch 21], [val loss 0.55294], [val acc 0.89363]
+[epoch 22], [iter 1000 / 1221], [train loss 0.00943], [train acc 0.99675]
+[epoch 22], [val loss 0.54620], [val acc 0.92220]
+[epoch 23], [iter 1000 / 1221], [train loss 0.01232], [train acc 0.99572]
+[epoch 23], [val loss 0.47412], [val acc 0.91405]
+[epoch 24], [iter 1000 / 1221], [train loss 0.01397], [train acc 0.99544]
+[epoch 24], [val loss 0.45354], [val acc 0.92667]
+*****************************************************
+best record: [epoch 24], [val loss 0.45354], [val acc 0.92667]
+*****************************************************
+[epoch 25], [iter 1000 / 1221], [train loss 0.00835], [train acc 0.99725]
+[epoch 25], [val loss 0.54760], [val acc 0.91583]
+[epoch 26], [iter 1000 / 1221], [train loss 0.01098], [train acc 0.99619]
+[epoch 26], [val loss 0.45287], [val acc 0.90613]
+[epoch 27], [iter 1000 / 1221], [train loss 0.00605], [train acc 0.99819]
+[epoch 27], [val loss 0.53838], [val acc 0.91417]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01106], [train acc 0.99666]
+[epoch 28], [val loss 0.47873], [val acc 0.92131]
+[epoch 29], [iter 1000 / 1221], [train loss 0.00800], [train acc 0.99713]
+[epoch 29], [val loss 0.56737], [val acc 0.91327]
+[epoch 30], [iter 1000 / 1221], [train loss 0.00761], [train acc 0.99753]
+[epoch 30], [val loss 0.53499], [val acc 0.91149]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.75      0.60      0.67        30
+         bcc       0.80      0.94      0.87        35
+         bkl       0.78      0.69      0.73        88
+          df       0.44      0.50      0.47         8
+          nv       0.97      0.97      0.97       883
+        vasc       1.00      0.77      0.87        13
+         mel       0.41      0.52      0.46        46
+
+    accuracy                           0.91      1103
+   macro avg       0.74      0.71      0.72      1103
+weighted avg       0.92      0.91      0.91      1103
+
+Confusion Matrix:
+[[ 18   4   4   0   0   0   4]
+ [  0  33   2   0   0   0   0]
+ [  4   0  61   2   9   0  12]
+ [  1   0   1   4   1   0   1]
+ [  0   3   5   1 857   0  17]
+ [  0   0   0   1   1  10   1]
+ [  1   1   5   1  14   0  24]]
+== On test data ==
+Test Accuracy: 91.2965%
+Precision: 0.7371
+Recall: 0.7139
+F1 Score: 0.7198
+finished with : EfficientFormerForImageClassification
+
+
+
+
+
+ ## running model      :    PvtV2ForImageClassification        ## 
+
+
+
+ == PvtV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.56952], [train acc 0.78272]
+[epoch 1], [val loss 0.26623], [val acc 0.90780]
+*****************************************************
+best record: [epoch 1], [val loss 0.26623], [val acc 0.90780]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.23682], [train acc 0.90981]
+[epoch 2], [val loss 0.31081], [val acc 0.90524]
+[epoch 3], [iter 1000 / 1221], [train loss 0.15424], [train acc 0.94116]
+[epoch 3], [val loss 0.38358], [val acc 0.90345]
+[epoch 4], [iter 1000 / 1221], [train loss 0.11104], [train acc 0.95931]
+[epoch 4], [val loss 0.35537], [val acc 0.90601]
+[epoch 5], [iter 1000 / 1221], [train loss 0.09141], [train acc 0.96619]
+[epoch 5], [val loss 0.35911], [val acc 0.88905]
+[epoch 6], [iter 1000 / 1221], [train loss 0.07516], [train acc 0.97222]
+[epoch 6], [val loss 0.39008], [val acc 0.90435]
+[epoch 7], [iter 1000 / 1221], [train loss 0.06185], [train acc 0.97803]
+[epoch 7], [val loss 0.39047], [val acc 0.92220]
+*****************************************************
+best record: [epoch 7], [val loss 0.39047], [val acc 0.92220]
+*****************************************************
+[epoch 8], [iter 1000 / 1221], [train loss 0.05907], [train acc 0.97844]
+[epoch 8], [val loss 0.35230], [val acc 0.90167]
+[epoch 9], [iter 1000 / 1221], [train loss 0.04883], [train acc 0.98269]
+[epoch 9], [val loss 0.32537], [val acc 0.91583]
+[epoch 10], [iter 1000 / 1221], [train loss 0.04674], [train acc 0.98300]
+[epoch 10], [val loss 0.34588], [val acc 0.91405]
+[epoch 11], [iter 1000 / 1221], [train loss 0.04264], [train acc 0.98541]
+[epoch 11], [val loss 0.35905], [val acc 0.92399]
+*****************************************************
+best record: [epoch 11], [val loss 0.35905], [val acc 0.92399]
+*****************************************************
+[epoch 12], [iter 1000 / 1221], [train loss 0.03666], [train acc 0.98750]
+[epoch 12], [val loss 0.49175], [val acc 0.88435]
+[epoch 13], [iter 1000 / 1221], [train loss 0.03355], [train acc 0.98869]
+[epoch 13], [val loss 0.41977], [val acc 0.90869]
+[epoch 14], [iter 1000 / 1221], [train loss 0.03038], [train acc 0.98906]
+[epoch 14], [val loss 0.43721], [val acc 0.90065]
+[epoch 15], [iter 1000 / 1221], [train loss 0.03021], [train acc 0.98953]
+[epoch 15], [val loss 0.41558], [val acc 0.91673]
+[epoch 16], [iter 1000 / 1221], [train loss 0.02880], [train acc 0.99009]
+[epoch 16], [val loss 0.35812], [val acc 0.93560]
+*****************************************************
+best record: [epoch 16], [val loss 0.35812], [val acc 0.93560]
+*****************************************************
+[epoch 17], [iter 1000 / 1221], [train loss 0.02967], [train acc 0.98931]
+[epoch 17], [val loss 0.35277], [val acc 0.93024]
+[epoch 18], [iter 1000 / 1221], [train loss 0.02459], [train acc 0.99144]
+[epoch 18], [val loss 0.36276], [val acc 0.91774]
+[epoch 19], [iter 1000 / 1221], [train loss 0.02723], [train acc 0.99047]
+[epoch 19], [val loss 0.40659], [val acc 0.92030]
+[epoch 20], [iter 1000 / 1221], [train loss 0.02387], [train acc 0.99162]
+[epoch 20], [val loss 0.35740], [val acc 0.91762]
+[epoch 21], [iter 1000 / 1221], [train loss 0.02359], [train acc 0.99234]
+[epoch 21], [val loss 0.46651], [val acc 0.91327]
+[epoch 22], [iter 1000 / 1221], [train loss 0.02330], [train acc 0.99181]
+[epoch 22], [val loss 0.44286], [val acc 0.89720]
+[epoch 23], [iter 1000 / 1221], [train loss 0.01897], [train acc 0.99397]
+[epoch 23], [val loss 0.42703], [val acc 0.91327]
+[epoch 24], [iter 1000 / 1221], [train loss 0.01943], [train acc 0.99287]
+[epoch 24], [val loss 0.39553], [val acc 0.91863]
+[epoch 25], [iter 1000 / 1221], [train loss 0.01887], [train acc 0.99322]
+[epoch 25], [val loss 0.36718], [val acc 0.92131]
+[epoch 26], [iter 1000 / 1221], [train loss 0.02166], [train acc 0.99319]
+[epoch 26], [val loss 0.41642], [val acc 0.91673]
+[epoch 27], [iter 1000 / 1221], [train loss 0.01882], [train acc 0.99384]
+[epoch 27], [val loss 0.42063], [val acc 0.91417]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01812], [train acc 0.99366]
+[epoch 28], [val loss 0.50354], [val acc 0.92042]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01553], [train acc 0.99456]
+[epoch 29], [val loss 0.39071], [val acc 0.90702]
+[epoch 30], [iter 1000 / 1221], [train loss 0.01797], [train acc 0.99406]
+[epoch 30], [val loss 0.46483], [val acc 0.90881]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.78      0.47      0.58        30
+         bcc       0.74      0.91      0.82        35
+         bkl       0.76      0.67      0.71        88
+          df       1.00      0.62      0.77         8
+          nv       0.96      0.97      0.97       883
+        vasc       1.00      0.69      0.82        13
+         mel       0.43      0.57      0.49        46
+
+    accuracy                           0.91      1103
+   macro avg       0.81      0.70      0.74      1103
+weighted avg       0.91      0.91      0.91      1103
+
+Confusion Matrix:
+[[ 14   4   6   0   2   0   4]
+ [  0  32   2   0   0   0   1]
+ [  3   3  59   0  10   0  13]
+ [  0   0   0   5   3   0   0]
+ [  1   2   6   0 857   0  17]
+ [  0   0   0   0   4   9   0]
+ [  0   2   5   0  13   0  26]]
+== On test data ==
+Test Accuracy: 90.8432%
+Precision: 0.8098
+Recall: 0.7006
+F1 Score: 0.7365
+finished with : PvtV2ForImageClassification
+
+
+
+
+
+ ## running model      :    MobileViTV2ForImageClassification        ## 
+
+
+
+ == MobileViTV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.78870], [train acc 0.71991]
+[epoch 1], [val loss 0.35436], [val acc 0.87298]
+*****************************************************
+best record: [epoch 1], [val loss 0.35436], [val acc 0.87298]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.31211], [train acc 0.88656]
+[epoch 2], [val loss 0.29907], [val acc 0.89339]
+*****************************************************
+best record: [epoch 2], [val loss 0.29907], [val acc 0.89339]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.20519], [train acc 0.92472]
+[epoch 3], [val loss 0.32625], [val acc 0.88726]
+[epoch 4], [iter 1000 / 1221], [train loss 0.14646], [train acc 0.94697]
+[epoch 4], [val loss 0.31270], [val acc 0.90345]
+*****************************************************
+best record: [epoch 4], [val loss 0.31270], [val acc 0.90345]
+*****************************************************
+[epoch 5], [iter 1000 / 1221], [train loss 0.11215], [train acc 0.95944]
+[epoch 5], [val loss 0.29956], [val acc 0.90970]
+*****************************************************
+best record: [epoch 5], [val loss 0.29956], [val acc 0.90970]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.08780], [train acc 0.96962]
+[epoch 6], [val loss 0.31781], [val acc 0.92131]
+*****************************************************
+best record: [epoch 6], [val loss 0.31781], [val acc 0.92131]
+*****************************************************
+[epoch 7], [iter 1000 / 1221], [train loss 0.07253], [train acc 0.97469]
+[epoch 7], [val loss 0.33421], [val acc 0.92220]
+*****************************************************
+best record: [epoch 7], [val loss 0.33421], [val acc 0.92220]
+*****************************************************
+[epoch 8], [iter 1000 / 1221], [train loss 0.05815], [train acc 0.97900]
+[epoch 8], [val loss 0.35664], [val acc 0.93113]
+*****************************************************
+best record: [epoch 8], [val loss 0.35664], [val acc 0.93113]
+*****************************************************
+[epoch 9], [iter 1000 / 1221], [train loss 0.05183], [train acc 0.98237]
+[epoch 9], [val loss 0.41167], [val acc 0.91060]
+[epoch 10], [iter 1000 / 1221], [train loss 0.04654], [train acc 0.98313]
+[epoch 10], [val loss 0.35648], [val acc 0.91774]
+[epoch 11], [iter 1000 / 1221], [train loss 0.04024], [train acc 0.98691]
+[epoch 11], [val loss 0.41022], [val acc 0.91685]
+[epoch 12], [iter 1000 / 1221], [train loss 0.03677], [train acc 0.98722]
+[epoch 12], [val loss 0.39934], [val acc 0.91863]
+[epoch 13], [iter 1000 / 1221], [train loss 0.03212], [train acc 0.98841]
+[epoch 13], [val loss 0.38384], [val acc 0.92935]
+[epoch 14], [iter 1000 / 1221], [train loss 0.02965], [train acc 0.99028]
+[epoch 14], [val loss 0.40209], [val acc 0.91506]
+[epoch 15], [iter 1000 / 1221], [train loss 0.02678], [train acc 0.99069]
+[epoch 15], [val loss 0.40352], [val acc 0.91774]
+[epoch 16], [iter 1000 / 1221], [train loss 0.02725], [train acc 0.99066]
+[epoch 16], [val loss 0.43954], [val acc 0.91327]
+[epoch 17], [iter 1000 / 1221], [train loss 0.02514], [train acc 0.99138]
+[epoch 17], [val loss 0.40158], [val acc 0.91940]
+[epoch 18], [iter 1000 / 1221], [train loss 0.02264], [train acc 0.99228]
+[epoch 18], [val loss 0.42135], [val acc 0.91583]
+[epoch 19], [iter 1000 / 1221], [train loss 0.01782], [train acc 0.99394]
+[epoch 19], [val loss 0.45204], [val acc 0.92399]
+[epoch 20], [iter 1000 / 1221], [train loss 0.02021], [train acc 0.99303]
+[epoch 20], [val loss 0.43385], [val acc 0.92577]
+[epoch 21], [iter 1000 / 1221], [train loss 0.01624], [train acc 0.99466]
+[epoch 21], [val loss 0.41623], [val acc 0.92488]
+[epoch 22], [iter 1000 / 1221], [train loss 0.01707], [train acc 0.99456]
+[epoch 22], [val loss 0.46901], [val acc 0.91417]
+[epoch 23], [iter 1000 / 1221], [train loss 0.01715], [train acc 0.99413]
+[epoch 23], [val loss 0.45247], [val acc 0.91952]
+[epoch 24], [iter 1000 / 1221], [train loss 0.01510], [train acc 0.99494]
+[epoch 24], [val loss 0.44717], [val acc 0.91952]
+[epoch 25], [iter 1000 / 1221], [train loss 0.01323], [train acc 0.99544]
+[epoch 25], [val loss 0.48266], [val acc 0.92310]
+[epoch 26], [iter 1000 / 1221], [train loss 0.01300], [train acc 0.99581]
+[epoch 26], [val loss 0.43929], [val acc 0.92577]
+[epoch 27], [iter 1000 / 1221], [train loss 0.01538], [train acc 0.99500]
+[epoch 27], [val loss 0.43015], [val acc 0.92935]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01409], [train acc 0.99531]
+[epoch 28], [val loss 0.49025], [val acc 0.92220]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01268], [train acc 0.99575]
+[epoch 29], [val loss 0.40384], [val acc 0.92577]
+[epoch 30], [iter 1000 / 1221], [train loss 0.01160], [train acc 0.99572]
+[epoch 30], [val loss 0.46726], [val acc 0.92042]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.77      0.57      0.65        30
+         bcc       0.89      0.89      0.89        35
+         bkl       0.76      0.66      0.71        88
+          df       0.78      0.88      0.82         8
+          nv       0.97      0.98      0.97       883
+        vasc       1.00      0.69      0.82        13
+         mel       0.43      0.52      0.47        46
+
+    accuracy                           0.92      1103
+   macro avg       0.80      0.74      0.76      1103
+weighted avg       0.92      0.92      0.92      1103
+
+Confusion Matrix:
+[[ 17   2   6   0   0   0   5]
+ [  0  31   3   0   1   0   0]
+ [  3   1  58   1  11   0  14]
+ [  0   0   0   7   0   0   1]
+ [  1   1   2   0 867   0  12]
+ [  0   0   1   0   3   9   0]
+ [  1   0   6   1  14   0  24]]
+== On test data ==
+Test Accuracy: 91.8404%
+Precision: 0.7994
+Recall: 0.7403
+F1 Score: 0.7620
+finished with : MobileViTV2ForImageClassification
+
+
+
+
+
+ ## running model      :    resnet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.56634], [train acc 0.79141]
+[epoch 1], [val loss 0.37297], [val acc 0.86571]
+*****************************************************
+best record: [epoch 1], [val loss 0.37297], [val acc 0.86571]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.29431], [train acc 0.89206]
+[epoch 2], [val loss 0.33535], [val acc 0.88929]
+*****************************************************
+best record: [epoch 2], [val loss 0.33535], [val acc 0.88929]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.21123], [train acc 0.92566]
+[epoch 3], [val loss 0.31884], [val acc 0.89619]
+*****************************************************
+best record: [epoch 3], [val loss 0.31884], [val acc 0.89619]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.16156], [train acc 0.94137]
+[epoch 4], [val loss 0.44476], [val acc 0.87042]
+[epoch 5], [iter 1000 / 1221], [train loss 0.14443], [train acc 0.94750]
+[epoch 5], [val loss 0.30205], [val acc 0.91964]
+*****************************************************
+best record: [epoch 5], [val loss 0.30205], [val acc 0.91964]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.11560], [train acc 0.95825]
+[epoch 6], [val loss 0.30283], [val acc 0.91417]
+[epoch 7], [iter 1000 / 1221], [train loss 0.10537], [train acc 0.96266]
+[epoch 7], [val loss 0.33974], [val acc 0.90345]
+[epoch 8], [iter 1000 / 1221], [train loss 0.09623], [train acc 0.96609]
+[epoch 8], [val loss 0.31906], [val acc 0.91952]
+[epoch 9], [iter 1000 / 1221], [train loss 0.08095], [train acc 0.97113]
+[epoch 9], [val loss 0.31008], [val acc 0.90893]
+[epoch 10], [iter 1000 / 1221], [train loss 0.08037], [train acc 0.97119]
+[epoch 10], [val loss 0.32070], [val acc 0.92232]
+*****************************************************
+best record: [epoch 10], [val loss 0.32070], [val acc 0.92232]
+*****************************************************
+[epoch 11], [iter 1000 / 1221], [train loss 0.07067], [train acc 0.97553]
+[epoch 11], [val loss 0.32430], [val acc 0.91429]
+[epoch 12], [iter 1000 / 1221], [train loss 0.06289], [train acc 0.97784]
+[epoch 12], [val loss 0.33086], [val acc 0.91060]
+[epoch 13], [iter 1000 / 1221], [train loss 0.05873], [train acc 0.97953]
+[epoch 13], [val loss 0.35174], [val acc 0.91417]
+[epoch 14], [iter 1000 / 1221], [train loss 0.05987], [train acc 0.97969]
+[epoch 14], [val loss 0.37737], [val acc 0.90256]
+[epoch 15], [iter 1000 / 1221], [train loss 0.05203], [train acc 0.98178]
+[epoch 15], [val loss 0.34167], [val acc 0.91774]
+[epoch 16], [iter 1000 / 1221], [train loss 0.04654], [train acc 0.98400]
+[epoch 16], [val loss 0.43518], [val acc 0.89643]
+[epoch 17], [iter 1000 / 1221], [train loss 0.04645], [train acc 0.98353]
+[epoch 17], [val loss 0.38338], [val acc 0.90435]
+[epoch 18], [iter 1000 / 1221], [train loss 0.04374], [train acc 0.98450]
+[epoch 18], [val loss 0.38405], [val acc 0.91250]
+[epoch 19], [iter 1000 / 1221], [train loss 0.04026], [train acc 0.98678]
+[epoch 19], [val loss 0.37230], [val acc 0.91952]
+[epoch 20], [iter 1000 / 1221], [train loss 0.04135], [train acc 0.98647]
+[epoch 20], [val loss 0.36836], [val acc 0.90167]
+[epoch 21], [iter 1000 / 1221], [train loss 0.03526], [train acc 0.98750]
+[epoch 21], [val loss 0.35397], [val acc 0.91696]
+[epoch 22], [iter 1000 / 1221], [train loss 0.03412], [train acc 0.98803]
+[epoch 22], [val loss 0.38838], [val acc 0.90714]
+[epoch 23], [iter 1000 / 1221], [train loss 0.03531], [train acc 0.98841]
+[epoch 23], [val loss 0.35007], [val acc 0.92042]
+[epoch 24], [iter 1000 / 1221], [train loss 0.03135], [train acc 0.98959]
+[epoch 24], [val loss 0.33818], [val acc 0.91685]
+[epoch 25], [iter 1000 / 1221], [train loss 0.02891], [train acc 0.99041]
+[epoch 25], [val loss 0.35739], [val acc 0.91774]
+[epoch 26], [iter 1000 / 1221], [train loss 0.03126], [train acc 0.98931]
+[epoch 26], [val loss 0.39881], [val acc 0.91774]
+[epoch 27], [iter 1000 / 1221], [train loss 0.02831], [train acc 0.99041]
+[epoch 27], [val loss 0.37974], [val acc 0.91506]
+[epoch 28], [iter 1000 / 1221], [train loss 0.02694], [train acc 0.99047]
+[epoch 28], [val loss 0.36187], [val acc 0.92667]
+*****************************************************
+best record: [epoch 28], [val loss 0.36187], [val acc 0.92667]
+*****************************************************
+[epoch 29], [iter 1000 / 1221], [train loss 0.02782], [train acc 0.99059]
+[epoch 29], [val loss 0.43241], [val acc 0.91149]
+[epoch 30], [iter 1000 / 1221], [train loss 0.02983], [train acc 0.99041]
+[epoch 30], [val loss 0.44415], [val acc 0.90702]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.77      0.67      0.71        30
+         bcc       0.94      0.83      0.88        35
+         bkl       0.70      0.70      0.70        88
+          df       0.75      0.75      0.75         8
+          nv       0.97      0.97      0.97       883
+        vasc       1.00      0.69      0.82        13
+         mel       0.48      0.67      0.56        46
+
+    accuracy                           0.92      1103
+   macro avg       0.80      0.75      0.77      1103
+weighted avg       0.92      0.92      0.92      1103
+
+Confusion Matrix:
+[[ 20   1   4   0   2   0   3]
+ [  2  29   3   0   1   0   0]
+ [  3   0  62   1   6   0  16]
+ [  0   0   1   6   0   0   1]
+ [  1   0  16   0 853   0  13]
+ [  0   0   0   1   3   9   0]
+ [  0   1   3   0  11   0  31]]
+== On test data ==
+Test Accuracy: 91.5684%
+Precision: 0.8014
+Recall: 0.7546
+F1 Score: 0.7708
+finished with : resnet
+
+
+
+
+
+ ## running model      :    vgg        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.58295], [train acc 0.78359]
+[epoch 1], [val loss 0.42395], [val acc 0.82565]
+*****************************************************
+best record: [epoch 1], [val loss 0.42395], [val acc 0.82565]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.26436], [train acc 0.90087]
+[epoch 2], [val loss 0.35214], [val acc 0.88292]
+*****************************************************
+best record: [epoch 2], [val loss 0.35214], [val acc 0.88292]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.18420], [train acc 0.93188]
+[epoch 3], [val loss 0.36120], [val acc 0.89452]
+*****************************************************
+best record: [epoch 3], [val loss 0.36120], [val acc 0.89452]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.14118], [train acc 0.94922]
+[epoch 4], [val loss 0.36751], [val acc 0.91417]
+*****************************************************
+best record: [epoch 4], [val loss 0.36751], [val acc 0.91417]
+*****************************************************
+[epoch 5], [iter 1000 / 1221], [train loss 0.12545], [train acc 0.95562]
+[epoch 5], [val loss 0.27949], [val acc 0.92399]
+*****************************************************
+best record: [epoch 5], [val loss 0.27949], [val acc 0.92399]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.10098], [train acc 0.96441]
+[epoch 6], [val loss 0.39287], [val acc 0.89988]
+[epoch 7], [iter 1000 / 1221], [train loss 0.08825], [train acc 0.96831]
+[epoch 7], [val loss 0.42511], [val acc 0.90155]
+[epoch 8], [iter 1000 / 1221], [train loss 0.08069], [train acc 0.97237]
+[epoch 8], [val loss 0.35048], [val acc 0.91762]
+[epoch 9], [iter 1000 / 1221], [train loss 0.06376], [train acc 0.97788]
+[epoch 9], [val loss 0.50692], [val acc 0.88000]
+[epoch 10], [iter 1000 / 1221], [train loss 0.07019], [train acc 0.97675]
+[epoch 10], [val loss 0.43069], [val acc 0.90601]
+[epoch 11], [iter 1000 / 1221], [train loss 0.05963], [train acc 0.97878]
+[epoch 11], [val loss 0.42520], [val acc 0.91060]
+[epoch 12], [iter 1000 / 1221], [train loss 0.05804], [train acc 0.98078]
+[epoch 12], [val loss 0.47612], [val acc 0.91417]
+[epoch 13], [iter 1000 / 1221], [train loss 0.05469], [train acc 0.98194]
+[epoch 13], [val loss 0.39607], [val acc 0.92220]
+[epoch 14], [iter 1000 / 1221], [train loss 0.04515], [train acc 0.98525]
+[epoch 14], [val loss 0.46307], [val acc 0.90881]
+[epoch 15], [iter 1000 / 1221], [train loss 0.04376], [train acc 0.98562]
+[epoch 15], [val loss 0.46651], [val acc 0.89274]
+[epoch 16], [iter 1000 / 1221], [train loss 0.04679], [train acc 0.98525]
+[epoch 16], [val loss 0.45173], [val acc 0.90792]
+[epoch 17], [iter 1000 / 1221], [train loss 0.04210], [train acc 0.98659]
+[epoch 17], [val loss 0.39761], [val acc 0.90244]
+[epoch 18], [iter 1000 / 1221], [train loss 0.03882], [train acc 0.98650]
+[epoch 18], [val loss 0.60219], [val acc 0.88369]
+[epoch 19], [iter 1000 / 1221], [train loss 0.03902], [train acc 0.98778]
+[epoch 19], [val loss 0.52025], [val acc 0.91060]
+[epoch 20], [iter 1000 / 1221], [train loss 0.03549], [train acc 0.98838]
+[epoch 20], [val loss 0.51985], [val acc 0.91685]
+[epoch 21], [iter 1000 / 1221], [train loss 0.03802], [train acc 0.98775]
+[epoch 21], [val loss 0.47182], [val acc 0.91685]
+[epoch 22], [iter 1000 / 1221], [train loss 0.03838], [train acc 0.98822]
+[epoch 22], [val loss 0.46810], [val acc 0.91149]
+[epoch 23], [iter 1000 / 1221], [train loss 0.03447], [train acc 0.98847]
+[epoch 23], [val loss 0.51945], [val acc 0.90613]
+[epoch 24], [iter 1000 / 1221], [train loss 0.03563], [train acc 0.98869]
+[epoch 24], [val loss 0.44768], [val acc 0.90970]
+[epoch 25], [iter 1000 / 1221], [train loss 0.02851], [train acc 0.99044]
+[epoch 25], [val loss 0.55733], [val acc 0.91238]
+[epoch 26], [iter 1000 / 1221], [train loss 0.02967], [train acc 0.99009]
+[epoch 26], [val loss 0.42388], [val acc 0.91250]
+[epoch 27], [iter 1000 / 1221], [train loss 0.03067], [train acc 0.99122]
+[epoch 27], [val loss 0.47225], [val acc 0.90256]
+[epoch 28], [iter 1000 / 1221], [train loss 0.02750], [train acc 0.99075]
+[epoch 28], [val loss 0.53359], [val acc 0.90970]
+[epoch 29], [iter 1000 / 1221], [train loss 0.02656], [train acc 0.99184]
+[epoch 29], [val loss 0.49599], [val acc 0.92131]
+[epoch 30], [iter 1000 / 1221], [train loss 0.03102], [train acc 0.99003]
+[epoch 30], [val loss 0.56176], [val acc 0.91774]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.77      0.57      0.65        30
+         bcc       0.90      0.80      0.85        35
+         bkl       0.77      0.73      0.75        88
+          df       0.57      0.50      0.53         8
+          nv       0.96      0.98      0.97       883
+        vasc       1.00      0.46      0.63        13
+         mel       0.50      0.52      0.51        46
+
+    accuracy                           0.91      1103
+   macro avg       0.78      0.65      0.70      1103
+weighted avg       0.91      0.91      0.91      1103
+
+Confusion Matrix:
+[[ 17   0   6   1   3   0   3]
+ [  2  28   1   1   0   0   3]
+ [  0   1  64   0  15   0   8]
+ [  0   0   1   4   3   0   0]
+ [  1   0   6   0 866   0  10]
+ [  0   1   0   1   5   6   0]
+ [  2   1   5   0  14   0  24]]
+== On test data ==
+Test Accuracy: 91.4778%
+Precision: 0.7820
+Recall: 0.6511
+F1 Score: 0.6992
+finished with : vgg
+
+
+
+
+
+ ## running model      :    densenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.55910], [train acc 0.79603]
+[epoch 1], [val loss 0.33096], [val acc 0.87732]
+*****************************************************
+best record: [epoch 1], [val loss 0.33096], [val acc 0.87732]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.24389], [train acc 0.91044]
+[epoch 2], [val loss 0.25293], [val acc 0.91952]
+*****************************************************
+best record: [epoch 2], [val loss 0.25293], [val acc 0.91952]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.16411], [train acc 0.94209]
+[epoch 3], [val loss 0.34412], [val acc 0.89274]
+[epoch 4], [iter 1000 / 1221], [train loss 0.12551], [train acc 0.95541]
+[epoch 4], [val loss 0.34314], [val acc 0.89542]
+[epoch 5], [iter 1000 / 1221], [train loss 0.10251], [train acc 0.96550]
+[epoch 5], [val loss 0.34851], [val acc 0.91685]
+[epoch 6], [iter 1000 / 1221], [train loss 0.08771], [train acc 0.96934]
+[epoch 6], [val loss 0.31750], [val acc 0.90512]
+[epoch 7], [iter 1000 / 1221], [train loss 0.07487], [train acc 0.97428]
+[epoch 7], [val loss 0.34544], [val acc 0.91238]
+[epoch 8], [iter 1000 / 1221], [train loss 0.06329], [train acc 0.97725]
+[epoch 8], [val loss 0.31969], [val acc 0.91595]
+[epoch 9], [iter 1000 / 1221], [train loss 0.05808], [train acc 0.98019]
+[epoch 9], [val loss 0.34164], [val acc 0.90333]
+[epoch 10], [iter 1000 / 1221], [train loss 0.05519], [train acc 0.98078]
+[epoch 10], [val loss 0.31897], [val acc 0.92042]
+*****************************************************
+best record: [epoch 10], [val loss 0.31897], [val acc 0.92042]
+*****************************************************
+[epoch 11], [iter 1000 / 1221], [train loss 0.05154], [train acc 0.98256]
+[epoch 11], [val loss 0.31155], [val acc 0.92399]
+*****************************************************
+best record: [epoch 11], [val loss 0.31155], [val acc 0.92399]
+*****************************************************
+[epoch 12], [iter 1000 / 1221], [train loss 0.04229], [train acc 0.98578]
+[epoch 12], [val loss 0.31266], [val acc 0.92131]
+[epoch 13], [iter 1000 / 1221], [train loss 0.04385], [train acc 0.98503]
+[epoch 13], [val loss 0.31670], [val acc 0.90702]
+[epoch 14], [iter 1000 / 1221], [train loss 0.03516], [train acc 0.98719]
+[epoch 14], [val loss 0.35697], [val acc 0.91238]
+[epoch 15], [iter 1000 / 1221], [train loss 0.04201], [train acc 0.98594]
+[epoch 15], [val loss 0.32138], [val acc 0.92488]
+*****************************************************
+best record: [epoch 15], [val loss 0.32138], [val acc 0.92488]
+*****************************************************
+[epoch 16], [iter 1000 / 1221], [train loss 0.03433], [train acc 0.98841]
+[epoch 16], [val loss 0.37574], [val acc 0.92310]
+[epoch 17], [iter 1000 / 1221], [train loss 0.03144], [train acc 0.98953]
+[epoch 17], [val loss 0.50674], [val acc 0.90613]
+[epoch 18], [iter 1000 / 1221], [train loss 0.03122], [train acc 0.98916]
+[epoch 18], [val loss 0.39499], [val acc 0.90792]
+[epoch 19], [iter 1000 / 1221], [train loss 0.02675], [train acc 0.99050]
+[epoch 19], [val loss 0.36455], [val acc 0.91583]
+[epoch 20], [iter 1000 / 1221], [train loss 0.02606], [train acc 0.99087]
+[epoch 20], [val loss 0.38220], [val acc 0.91238]
+[epoch 21], [iter 1000 / 1221], [train loss 0.02287], [train acc 0.99206]
+[epoch 21], [val loss 0.36732], [val acc 0.91506]
+[epoch 22], [iter 1000 / 1221], [train loss 0.02906], [train acc 0.99019]
+[epoch 22], [val loss 0.44471], [val acc 0.90690]
+[epoch 23], [iter 1000 / 1221], [train loss 0.02209], [train acc 0.99266]
+[epoch 23], [val loss 0.42647], [val acc 0.91595]
+[epoch 24], [iter 1000 / 1221], [train loss 0.02584], [train acc 0.99078]
+[epoch 24], [val loss 0.40360], [val acc 0.91238]
+[epoch 25], [iter 1000 / 1221], [train loss 0.02051], [train acc 0.99287]
+[epoch 25], [val loss 0.42476], [val acc 0.91685]
+[epoch 26], [iter 1000 / 1221], [train loss 0.02291], [train acc 0.99253]
+[epoch 26], [val loss 0.40997], [val acc 0.91595]
+[epoch 27], [iter 1000 / 1221], [train loss 0.01998], [train acc 0.99350]
+[epoch 27], [val loss 0.43928], [val acc 0.91238]
+[epoch 28], [iter 1000 / 1221], [train loss 0.02037], [train acc 0.99294]
+[epoch 28], [val loss 0.39089], [val acc 0.91595]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01873], [train acc 0.99394]
+[epoch 29], [val loss 0.39141], [val acc 0.91786]
+[epoch 30], [iter 1000 / 1221], [train loss 0.02241], [train acc 0.99225]
+[epoch 30], [val loss 0.42478], [val acc 0.92488]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.87      0.43      0.58        30
+         bcc       0.84      0.91      0.88        35
+         bkl       0.77      0.70      0.73        88
+          df       0.67      0.50      0.57         8
+          nv       0.97      0.98      0.97       883
+        vasc       1.00      0.69      0.82        13
+         mel       0.44      0.57      0.50        46
+
+    accuracy                           0.92      1103
+   macro avg       0.79      0.68      0.72      1103
+weighted avg       0.92      0.92      0.91      1103
+
+Confusion Matrix:
+[[ 13   0   8   1   3   0   5]
+ [  0  32   3   0   0   0   0]
+ [  1   5  62   0  10   0  10]
+ [  0   0   0   4   3   0   1]
+ [  0   0   3   0 864   0  16]
+ [  0   0   0   1   2   9   1]
+ [  1   1   5   0  13   0  26]]
+== On test data ==
+Test Accuracy: 91.5684%
+Precision: 0.7924
+Recall: 0.6840
+F1 Score: 0.7207
+finished with : densenet
+
+
+
+
+
+ ## running model      :    googlenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.65747], [train acc 0.75991]
+[epoch 1], [val loss 0.32022], [val acc 0.88917]
+*****************************************************
+best record: [epoch 1], [val loss 0.32022], [val acc 0.88917]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.29414], [train acc 0.89072]
+[epoch 2], [val loss 0.33955], [val acc 0.88089]
+[epoch 3], [iter 1000 / 1221], [train loss 0.19815], [train acc 0.92881]
+[epoch 3], [val loss 0.33042], [val acc 0.89095]
+*****************************************************
+best record: [epoch 3], [val loss 0.33042], [val acc 0.89095]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.15551], [train acc 0.94366]
+[epoch 4], [val loss 0.36347], [val acc 0.89643]
+*****************************************************
+best record: [epoch 4], [val loss 0.36347], [val acc 0.89643]
+*****************************************************
+[epoch 5], [iter 1000 / 1221], [train loss 0.12522], [train acc 0.95556]
+[epoch 5], [val loss 0.31112], [val acc 0.91060]
+*****************************************************
+best record: [epoch 5], [val loss 0.31112], [val acc 0.91060]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.10689], [train acc 0.96162]
+[epoch 6], [val loss 0.37254], [val acc 0.89262]
+[epoch 7], [iter 1000 / 1221], [train loss 0.09077], [train acc 0.96800]
+[epoch 7], [val loss 0.33378], [val acc 0.90089]
+[epoch 8], [iter 1000 / 1221], [train loss 0.07861], [train acc 0.97162]
+[epoch 8], [val loss 0.30111], [val acc 0.92042]
+*****************************************************
+best record: [epoch 8], [val loss 0.30111], [val acc 0.92042]
+*****************************************************
+[epoch 9], [iter 1000 / 1221], [train loss 0.07733], [train acc 0.97281]
+[epoch 9], [val loss 0.34513], [val acc 0.91583]
+[epoch 10], [iter 1000 / 1221], [train loss 0.06599], [train acc 0.97653]
+[epoch 10], [val loss 0.34932], [val acc 0.91327]
+[epoch 11], [iter 1000 / 1221], [train loss 0.06045], [train acc 0.97928]
+[epoch 11], [val loss 0.41538], [val acc 0.89083]
+[epoch 12], [iter 1000 / 1221], [train loss 0.05606], [train acc 0.98022]
+[epoch 12], [val loss 0.40650], [val acc 0.90333]
+[epoch 13], [iter 1000 / 1221], [train loss 0.05279], [train acc 0.98153]
+[epoch 13], [val loss 0.42984], [val acc 0.91238]
+[epoch 14], [iter 1000 / 1221], [train loss 0.04956], [train acc 0.98334]
+[epoch 14], [val loss 0.37727], [val acc 0.91149]
+[epoch 15], [iter 1000 / 1221], [train loss 0.04337], [train acc 0.98487]
+[epoch 15], [val loss 0.44834], [val acc 0.88917]
+[epoch 16], [iter 1000 / 1221], [train loss 0.04023], [train acc 0.98628]
+[epoch 16], [val loss 0.36940], [val acc 0.91506]
+[epoch 17], [iter 1000 / 1221], [train loss 0.03935], [train acc 0.98656]
+[epoch 17], [val loss 0.34345], [val acc 0.91774]
+[epoch 18], [iter 1000 / 1221], [train loss 0.04325], [train acc 0.98497]
+[epoch 18], [val loss 0.43613], [val acc 0.91417]
+[epoch 19], [iter 1000 / 1221], [train loss 0.03370], [train acc 0.98819]
+[epoch 19], [val loss 0.50597], [val acc 0.90613]
+[epoch 20], [iter 1000 / 1221], [train loss 0.03424], [train acc 0.98850]
+[epoch 20], [val loss 0.39765], [val acc 0.91863]
+[epoch 21], [iter 1000 / 1221], [train loss 0.03290], [train acc 0.98884]
+[epoch 21], [val loss 0.44024], [val acc 0.90000]
+[epoch 22], [iter 1000 / 1221], [train loss 0.03245], [train acc 0.98950]
+[epoch 22], [val loss 0.51673], [val acc 0.89185]
+[epoch 23], [iter 1000 / 1221], [train loss 0.02972], [train acc 0.98975]
+[epoch 23], [val loss 0.45899], [val acc 0.90881]
+[epoch 24], [iter 1000 / 1221], [train loss 0.03256], [train acc 0.98831]
+[epoch 24], [val loss 0.41407], [val acc 0.90702]
+[epoch 25], [iter 1000 / 1221], [train loss 0.02803], [train acc 0.98991]
+[epoch 25], [val loss 0.42359], [val acc 0.91417]
+[epoch 26], [iter 1000 / 1221], [train loss 0.02473], [train acc 0.99187]
+[epoch 26], [val loss 0.48767], [val acc 0.90333]
+[epoch 27], [iter 1000 / 1221], [train loss 0.02688], [train acc 0.99091]
+[epoch 27], [val loss 0.44133], [val acc 0.92042]
+[epoch 28], [iter 1000 / 1221], [train loss 0.02636], [train acc 0.99125]
+[epoch 28], [val loss 0.41216], [val acc 0.92488]
+*****************************************************
+best record: [epoch 28], [val loss 0.41216], [val acc 0.92488]
+*****************************************************
+[epoch 29], [iter 1000 / 1221], [train loss 0.02715], [train acc 0.99091]
+[epoch 29], [val loss 0.45460], [val acc 0.90625]
+[epoch 30], [iter 1000 / 1221], [train loss 0.02275], [train acc 0.99222]
+[epoch 30], [val loss 0.50861], [val acc 0.91060]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.79      0.63      0.70        30
+         bcc       0.81      0.86      0.83        35
+         bkl       0.73      0.70      0.72        88
+          df       0.71      0.62      0.67         8
+          nv       0.97      0.98      0.97       883
+        vasc       0.89      0.62      0.73        13
+         mel       0.50      0.52      0.51        46
+
+    accuracy                           0.92      1103
+   macro avg       0.77      0.71      0.73      1103
+weighted avg       0.92      0.92      0.92      1103
+
+Confusion Matrix:
+[[ 19   1   6   0   2   1   1]
+ [  1  30   3   1   0   0   0]
+ [  2   4  62   1   9   0  10]
+ [  1   0   0   5   2   0   0]
+ [  1   1   5   0 864   0  12]
+ [  0   0   1   0   3   8   1]
+ [  0   1   8   0  13   0  24]]
+== On test data ==
+Test Accuracy: 91.7498%
+Precision: 0.7718
+Recall: 0.7051
+F1 Score: 0.7331
+finished with : googlenet
+
+
+
+
+
+ ## running model      :    efficientnet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.67318], [train acc 0.75525]
+[epoch 1], [val loss 0.31127], [val acc 0.88827]
+*****************************************************
+best record: [epoch 1], [val loss 0.31127], [val acc 0.88827]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.27666], [train acc 0.89866]
+[epoch 2], [val loss 0.31787], [val acc 0.89798]
+*****************************************************
+best record: [epoch 2], [val loss 0.31787], [val acc 0.89798]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.18279], [train acc 0.93194]
+[epoch 3], [val loss 0.30652], [val acc 0.90970]
+*****************************************************
+best record: [epoch 3], [val loss 0.30652], [val acc 0.90970]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.13070], [train acc 0.95284]
+[epoch 4], [val loss 0.29929], [val acc 0.91417]
+*****************************************************
+best record: [epoch 4], [val loss 0.29929], [val acc 0.91417]
+*****************************************************
+[epoch 5], [iter 1000 / 1221], [train loss 0.10379], [train acc 0.96231]
+[epoch 5], [val loss 0.35759], [val acc 0.91595]
+*****************************************************
+best record: [epoch 5], [val loss 0.35759], [val acc 0.91595]
+*****************************************************
+[epoch 6], [iter 1000 / 1221], [train loss 0.08357], [train acc 0.97047]
+[epoch 6], [val loss 0.33986], [val acc 0.92042]
+*****************************************************
+best record: [epoch 6], [val loss 0.33986], [val acc 0.92042]
+*****************************************************
+[epoch 7], [iter 1000 / 1221], [train loss 0.06946], [train acc 0.97631]
+[epoch 7], [val loss 0.52514], [val acc 0.91685]
+[epoch 8], [iter 1000 / 1221], [train loss 0.06067], [train acc 0.97791]
+[epoch 8], [val loss 0.38285], [val acc 0.91494]
+[epoch 9], [iter 1000 / 1221], [train loss 0.04934], [train acc 0.98247]
+[epoch 9], [val loss 0.32557], [val acc 0.92935]
+*****************************************************
+best record: [epoch 9], [val loss 0.32557], [val acc 0.92935]
+*****************************************************
+[epoch 10], [iter 1000 / 1221], [train loss 0.04593], [train acc 0.98434]
+[epoch 10], [val loss 0.37740], [val acc 0.92220]
+[epoch 11], [iter 1000 / 1221], [train loss 0.04369], [train acc 0.98487]
+[epoch 11], [val loss 0.37786], [val acc 0.91327]
+[epoch 12], [iter 1000 / 1221], [train loss 0.03818], [train acc 0.98644]
+[epoch 12], [val loss 0.39276], [val acc 0.92310]
+[epoch 13], [iter 1000 / 1221], [train loss 0.03352], [train acc 0.98866]
+[epoch 13], [val loss 0.42061], [val acc 0.91952]
+[epoch 14], [iter 1000 / 1221], [train loss 0.03453], [train acc 0.98838]
+[epoch 14], [val loss 0.42986], [val acc 0.91417]
+[epoch 15], [iter 1000 / 1221], [train loss 0.03048], [train acc 0.98925]
+[epoch 15], [val loss 0.43766], [val acc 0.91863]
+[epoch 16], [iter 1000 / 1221], [train loss 0.02888], [train acc 0.99022]
+[epoch 16], [val loss 0.42703], [val acc 0.92756]
+[epoch 17], [iter 1000 / 1221], [train loss 0.02745], [train acc 0.99056]
+[epoch 17], [val loss 0.40714], [val acc 0.92399]
+[epoch 18], [iter 1000 / 1221], [train loss 0.02672], [train acc 0.99131]
+[epoch 18], [val loss 0.45740], [val acc 0.92399]
+[epoch 19], [iter 1000 / 1221], [train loss 0.02361], [train acc 0.99206]
+[epoch 19], [val loss 0.41106], [val acc 0.92756]
+[epoch 20], [iter 1000 / 1221], [train loss 0.02166], [train acc 0.99275]
+[epoch 20], [val loss 0.46001], [val acc 0.91863]
+[epoch 21], [iter 1000 / 1221], [train loss 0.02060], [train acc 0.99281]
+[epoch 21], [val loss 0.45833], [val acc 0.92220]
+[epoch 22], [iter 1000 / 1221], [train loss 0.01724], [train acc 0.99438]
+[epoch 22], [val loss 0.41912], [val acc 0.92935]
+[epoch 23], [iter 1000 / 1221], [train loss 0.02186], [train acc 0.99287]
+[epoch 23], [val loss 0.41199], [val acc 0.92131]
+[epoch 24], [iter 1000 / 1221], [train loss 0.01882], [train acc 0.99387]
+[epoch 24], [val loss 0.43056], [val acc 0.93292]
+*****************************************************
+best record: [epoch 24], [val loss 0.43056], [val acc 0.93292]
+*****************************************************
+[epoch 25], [iter 1000 / 1221], [train loss 0.01558], [train acc 0.99456]
+[epoch 25], [val loss 0.41232], [val acc 0.93292]
+[epoch 26], [iter 1000 / 1221], [train loss 0.01623], [train acc 0.99450]
+[epoch 26], [val loss 0.47228], [val acc 0.92220]
+[epoch 27], [iter 1000 / 1221], [train loss 0.01359], [train acc 0.99550]
+[epoch 27], [val loss 0.47600], [val acc 0.91595]
+[epoch 28], [iter 1000 / 1221], [train loss 0.01725], [train acc 0.99400]
+[epoch 28], [val loss 0.47069], [val acc 0.92042]
+[epoch 29], [iter 1000 / 1221], [train loss 0.01355], [train acc 0.99572]
+[epoch 29], [val loss 0.56696], [val acc 0.92310]
+[epoch 30], [iter 1000 / 1221], [train loss 0.01576], [train acc 0.99438]
+[epoch 30], [val loss 0.43128], [val acc 0.92577]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.75      0.60      0.67        30
+         bcc       0.78      0.91      0.84        35
+         bkl       0.82      0.69      0.75        88
+          df       0.70      0.88      0.78         8
+          nv       0.97      0.98      0.98       883
+        vasc       1.00      0.77      0.87        13
+         mel       0.51      0.57      0.54        46
+
+    accuracy                           0.92      1103
+   macro avg       0.79      0.77      0.77      1103
+weighted avg       0.93      0.92      0.92      1103
+
+Confusion Matrix:
+[[ 18   2   4   0   1   0   5]
+ [  2  32   0   1   0   0   0]
+ [  1   2  61   0  14   0  10]
+ [  1   0   0   7   0   0   0]
+ [  0   2   3   2 866   0  10]
+ [  0   0   1   0   2  10   0]
+ [  2   3   5   0  10   0  26]]
+== On test data ==
+Test Accuracy: 92.4751%
+Precision: 0.7906
+Recall: 0.7711
+F1 Score: 0.7744
+finished with : efficientnet
+
+
+
+
+
+ ## running model      :    mobilenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.62657], [train acc 0.77066]
+[epoch 1], [val loss 0.34907], [val acc 0.86315]
+*****************************************************
+best record: [epoch 1], [val loss 0.34907], [val acc 0.86315]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.31879], [train acc 0.88150]
+[epoch 2], [val loss 0.36423], [val acc 0.86786]
+*****************************************************
+best record: [epoch 2], [val loss 0.36423], [val acc 0.86786]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.22969], [train acc 0.91478]
+[epoch 3], [val loss 0.32304], [val acc 0.88548]
+*****************************************************
+best record: [epoch 3], [val loss 0.32304], [val acc 0.88548]
+*****************************************************
+[epoch 4], [iter 1000 / 1221], [train loss 0.17806], [train acc 0.93306]
+[epoch 4], [val loss 0.31969], [val acc 0.89185]
+*****************************************************
+best record: [epoch 4], [val loss 0.31969], [val acc 0.89185]
+*****************************************************
+[epoch 5], [iter 1000 / 1221], [train loss 0.14418], [train acc 0.94666]
+[epoch 5], [val loss 0.37248], [val acc 0.88649]
+[epoch 6], [iter 1000 / 1221], [train loss 0.12742], [train acc 0.95234]
+[epoch 6], [val loss 0.37047], [val acc 0.88101]
+[epoch 7], [iter 1000 / 1221], [train loss 0.10839], [train acc 0.96106]
+[epoch 7], [val loss 0.41380], [val acc 0.89619]
+*****************************************************
+best record: [epoch 7], [val loss 0.41380], [val acc 0.89619]
+*****************************************************
+[epoch 8], [iter 1000 / 1221], [train loss 0.09344], [train acc 0.96581]
+[epoch 8], [val loss 0.35924], [val acc 0.90613]
+*****************************************************
+best record: [epoch 8], [val loss 0.35924], [val acc 0.90613]
+*****************************************************
+[epoch 9], [iter 1000 / 1221], [train loss 0.08553], [train acc 0.96869]
+[epoch 9], [val loss 0.40340], [val acc 0.90524]
+[epoch 10], [iter 1000 / 1221], [train loss 0.08120], [train acc 0.97175]
+[epoch 10], [val loss 0.36653], [val acc 0.91518]
+*****************************************************
+best record: [epoch 10], [val loss 0.36653], [val acc 0.91518]
+*****************************************************
+[epoch 11], [iter 1000 / 1221], [train loss 0.07564], [train acc 0.97244]
+[epoch 11], [val loss 0.31388], [val acc 0.91696]
+*****************************************************
+best record: [epoch 11], [val loss 0.31388], [val acc 0.91696]
+*****************************************************
+[epoch 12], [iter 1000 / 1221], [train loss 0.06451], [train acc 0.97678]
+[epoch 12], [val loss 0.38825], [val acc 0.90869]
+[epoch 13], [iter 1000 / 1221], [train loss 0.06181], [train acc 0.97866]
+[epoch 13], [val loss 0.36497], [val acc 0.91952]
+*****************************************************
+best record: [epoch 13], [val loss 0.36497], [val acc 0.91952]
+*****************************************************
+[epoch 14], [iter 1000 / 1221], [train loss 0.05371], [train acc 0.98097]
+[epoch 14], [val loss 0.40535], [val acc 0.90881]
+[epoch 15], [iter 1000 / 1221], [train loss 0.05930], [train acc 0.97937]
+[epoch 15], [val loss 0.44909], [val acc 0.89542]
+[epoch 16], [iter 1000 / 1221], [train loss 0.04757], [train acc 0.98316]
+[epoch 16], [val loss 0.40460], [val acc 0.91238]
+[epoch 17], [iter 1000 / 1221], [train loss 0.04784], [train acc 0.98325]
+[epoch 17], [val loss 0.38859], [val acc 0.91595]
+[epoch 18], [iter 1000 / 1221], [train loss 0.04562], [train acc 0.98444]
+[epoch 18], [val loss 0.41962], [val acc 0.91060]
+[epoch 19], [iter 1000 / 1221], [train loss 0.04479], [train acc 0.98422]
+[epoch 19], [val loss 0.33663], [val acc 0.92577]
+*****************************************************
+best record: [epoch 19], [val loss 0.33663], [val acc 0.92577]
+*****************************************************
+[epoch 20], [iter 1000 / 1221], [train loss 0.04145], [train acc 0.98566]
+[epoch 20], [val loss 0.43368], [val acc 0.90345]
+[epoch 21], [iter 1000 / 1221], [train loss 0.04332], [train acc 0.98516]
+[epoch 21], [val loss 0.41278], [val acc 0.90881]
+[epoch 22], [iter 1000 / 1221], [train loss 0.03805], [train acc 0.98759]
+[epoch 22], [val loss 0.39806], [val acc 0.91048]
+[epoch 23], [iter 1000 / 1221], [train loss 0.03311], [train acc 0.98853]
+[epoch 23], [val loss 0.48785], [val acc 0.91137]
+[epoch 24], [iter 1000 / 1221], [train loss 0.03433], [train acc 0.98806]
+[epoch 24], [val loss 0.44710], [val acc 0.91238]
+[epoch 25], [iter 1000 / 1221], [train loss 0.03746], [train acc 0.98703]
+[epoch 25], [val loss 0.44959], [val acc 0.90613]
+[epoch 26], [iter 1000 / 1221], [train loss 0.03144], [train acc 0.98972]
+[epoch 26], [val loss 0.38084], [val acc 0.91762]
+[epoch 27], [iter 1000 / 1221], [train loss 0.02781], [train acc 0.99019]
+[epoch 27], [val loss 0.40087], [val acc 0.92667]
+*****************************************************
+best record: [epoch 27], [val loss 0.40087], [val acc 0.92667]
+*****************************************************
+[epoch 28], [iter 1000 / 1221], [train loss 0.03069], [train acc 0.98953]
+[epoch 28], [val loss 0.44731], [val acc 0.92399]
+[epoch 29], [iter 1000 / 1221], [train loss 0.02775], [train acc 0.99025]
+[epoch 29], [val loss 0.44880], [val acc 0.91327]
+[epoch 30], [iter 1000 / 1221], [train loss 0.03001], [train acc 0.98947]
+[epoch 30], [val loss 0.43288], [val acc 0.91595]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.75      0.60      0.67        30
+         bcc       0.77      0.94      0.85        35
+         bkl       0.72      0.73      0.72        88
+          df       0.60      0.75      0.67         8
+          nv       0.97      0.97      0.97       883
+        vasc       1.00      0.54      0.70        13
+         mel       0.45      0.41      0.43        46
+
+    accuracy                           0.91      1103
+   macro avg       0.75      0.71      0.71      1103
+weighted avg       0.91      0.91      0.91      1103
+
+Confusion Matrix:
+[[ 18   2   6   0   1   0   3]
+ [  0  33   2   0   0   0   0]
+ [  4   2  64   1  10   0   7]
+ [  0   0   0   6   2   0   0]
+ [  1   4   7   1 859   0  11]
+ [  0   0   0   1   3   7   2]
+ [  1   2  10   1  13   0  19]]
+== On test data ==
+Test Accuracy: 91.2058%
+Precision: 0.7509
+Recall: 0.7064
+F1 Score: 0.7149
+finished with : mobilenet
+= = = = = = = = execution finished = = = = = = = = = = = = =

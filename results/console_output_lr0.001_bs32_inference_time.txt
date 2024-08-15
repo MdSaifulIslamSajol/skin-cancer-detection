@@ -1,0 +1,710 @@
+learning rate  : 0.001
+batch_size : 32
+len(df_train): 8912
+len(df_val): 1103
+df_train[cell_type].value_counts() : cell_type
+dermatofibroma                    6402
+Benign keratosis-like lesions     6066
+Melanocytic nevi                  5822
+Dermatofibroma                    5457
+Vascular lesions                  5289
+Basal cell carcinoma              5269
+Actinic keratoses                 4752
+Name: count, dtype: int64
+
+
+
+
+
+ ## running model      :    ViTForImageClassification2        ## 
+
+
+
+ == ViTForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 1.38432], [train acc 0.45434]
+[epoch 1], [val loss 0.84122], [val acc 0.68804], [avg inference time per image 0.00040 seconds]
+*****************************************************
+model_name : ViTForImageClassification2
+avg_inference_time : 0.0003993865693577397
+best record: [epoch 1], [val loss 0.84122], [val acc 0.68804], [avg inference time per image 0.00040 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 1.06507], [train acc 0.58725]
+[epoch 2], [val loss 0.52995], [val acc 0.79161], [avg inference time per image 0.00040 seconds]
+*****************************************************
+model_name : ViTForImageClassification2
+avg_inference_time : 0.0003983546470579837
+best record: [epoch 2], [val loss 0.52995], [val acc 0.79161], [avg inference time per image 0.00040 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.90601], [train acc 0.64975]
+[epoch 3], [val loss 0.51976], [val acc 0.79250], [avg inference time per image 0.00041 seconds]
+*****************************************************
+model_name : ViTForImageClassification2
+avg_inference_time : 0.0004071337681733146
+best record: [epoch 3], [val loss 0.51976], [val acc 0.79250], [avg inference time per image 0.00041 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.26      0.33      0.29        30
+         bcc       0.42      0.80      0.55        35
+         bkl       0.51      0.43      0.47        88
+          df       0.38      0.38      0.38         8
+          nv       0.98      0.86      0.91       883
+        vasc       0.61      0.85      0.71        13
+         mel       0.21      0.57      0.31        46
+
+    accuracy                           0.79      1103
+   macro avg       0.48      0.60      0.52      1103
+weighted avg       0.86      0.79      0.82      1103
+
+Confusion Matrix:
+[[ 10   8   5   1   0   0   6]
+ [  6  28   0   0   0   0   1]
+ [  6  11  38   1  12   1  19]
+ [  0   1   3   3   1   0   0]
+ [ 11  15  23   2 757   5  70]
+ [  0   0   0   0   2  11   0]
+ [  5   4   5   1   4   1  26]]
+== On test data ==
+Test Accuracy: 79.1478%
+Precision: 0.4813
+Recall: 0.6013
+F1 Score: 0.5170
+finished with : ViTForImageClassification2
+
+
+
+
+
+ ## running model      :    ConvNextV2ForImageClassification        ## 
+
+
+
+ == ConvNextV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 1.94852], [train acc 0.15712]
+[epoch 1], [val loss 1.89031], [val acc 0.04107], [avg inference time per image 0.00048 seconds]
+*****************************************************
+model_name : ConvNextV2ForImageClassification
+avg_inference_time : 0.00047764471197603834
+best record: [epoch 1], [val loss 1.89031], [val acc 0.04107], [avg inference time per image 0.00048 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 1.94333], [train acc 0.15803]
+[epoch 2], [val loss 1.92796], [val acc 0.04107], [avg inference time per image 0.00041 seconds]
+[epoch 3], [iter 1000 / 1221], [train loss 1.94293], [train acc 0.15900]
+[epoch 3], [val loss 1.86580], [val acc 0.04107], [avg inference time per image 0.00048 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.00      0.00      0.00        30
+         bcc       0.00      0.00      0.00        35
+         bkl       0.00      0.00      0.00        88
+          df       0.00      0.00      0.00         8
+          nv       0.00      0.00      0.00       883
+        vasc       0.00      0.00      0.00        13
+         mel       0.04      1.00      0.08        46
+
+    accuracy                           0.04      1103
+   macro avg       0.01      0.14      0.01      1103
+weighted avg       0.00      0.04      0.00      1103
+
+Confusion Matrix:
+[[  0   0   0   0   0   0  30]
+ [  0   0   0   0   0   0  35]
+ [  0   0   0   0   0   0  88]
+ [  0   0   0   0   0   0   8]
+ [  0   0   0   0   0   0 883]
+ [  0   0   0   0   0   0  13]
+ [  0   0   0   0   0   0  46]]
+== On test data ==
+Test Accuracy: 4.1704%
+Precision: 0.0060
+Recall: 0.1429
+F1 Score: 0.0114
+finished with : ConvNextV2ForImageClassification
+
+
+
+
+
+ ## running model      :    Swinv2ForImageClassification        ## 
+
+
+
+ == Swinv2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 1.91611], [train acc 0.19712]
+[epoch 1], [val loss 2.00783], [val acc 0.07232], [avg inference time per image 0.00155 seconds]
+*****************************************************
+model_name : Swinv2ForImageClassification
+avg_inference_time : 0.0015475151221101542
+best record: [epoch 1], [val loss 2.00783], [val acc 0.07232], [avg inference time per image 0.00155 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 1.86385], [train acc 0.23184]
+[epoch 2], [val loss 1.69920], [val acc 0.21899], [avg inference time per image 0.00154 seconds]
+*****************************************************
+model_name : Swinv2ForImageClassification
+avg_inference_time : 0.0015422171716352863
+best record: [epoch 2], [val loss 1.69920], [val acc 0.21899], [avg inference time per image 0.00154 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 1.83722], [train acc 0.24034]
+[epoch 3], [val loss 1.79703], [val acc 0.29804], [avg inference time per image 0.00154 seconds]
+*****************************************************
+model_name : Swinv2ForImageClassification
+avg_inference_time : 0.0015403407331174433
+best record: [epoch 3], [val loss 1.79703], [val acc 0.29804], [avg inference time per image 0.00154 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.00      0.00      0.00        30
+         bcc       0.07      0.46      0.12        35
+         bkl       0.18      0.48      0.26        88
+          df       0.00      0.00      0.00         8
+          nv       0.88      0.30      0.44       883
+        vasc       0.01      0.15      0.02        13
+         mel       0.14      0.35      0.20        46
+
+    accuracy                           0.31      1103
+   macro avg       0.18      0.25      0.15      1103
+weighted avg       0.73      0.31      0.39      1103
+
+Confusion Matrix:
+[[  0   7  11   2   7   1   2]
+ [  0  16  11   1   1   4   2]
+ [  1  11  42   0  18   5  11]
+ [  0   4   1   0   3   0   0]
+ [  0 190 148   0 261 197  87]
+ [  1   4   3   0   3   2   0]
+ [  1   3  20   0   3   3  16]]
+== On test data ==
+Test Accuracy: 30.5530%
+Precision: 0.1818
+Recall: 0.2474
+F1 Score: 0.1476
+finished with : Swinv2ForImageClassification
+
+
+
+
+
+ ## running model      :    CvtForImageClassification        ## 
+
+
+
+ == CvtForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 1.31795], [train acc 0.47781]
+[epoch 1], [val loss 0.77509], [val acc 0.71179], [avg inference time per image 0.00086 seconds]
+*****************************************************
+model_name : CvtForImageClassification
+avg_inference_time : 0.0008572166007103319
+best record: [epoch 1], [val loss 0.77509], [val acc 0.71179], [avg inference time per image 0.00086 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.98593], [train acc 0.60303]
+[epoch 2], [val loss 0.65840], [val acc 0.74494], [avg inference time per image 0.00085 seconds]
+*****************************************************
+model_name : CvtForImageClassification
+avg_inference_time : 0.0008456166614107079
+best record: [epoch 2], [val loss 0.65840], [val acc 0.74494], [avg inference time per image 0.00085 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.89182], [train acc 0.64078]
+[epoch 3], [val loss 0.51630], [val acc 0.81661], [avg inference time per image 0.00088 seconds]
+*****************************************************
+model_name : CvtForImageClassification
+avg_inference_time : 0.0008811937714314742
+best record: [epoch 3], [val loss 0.51630], [val acc 0.81661], [avg inference time per image 0.00088 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.34      0.67      0.45        30
+         bcc       0.78      0.60      0.68        35
+         bkl       0.41      0.80      0.54        88
+          df       0.23      0.62      0.33         8
+          nv       0.99      0.85      0.91       883
+        vasc       0.69      0.85      0.76        13
+         mel       0.33      0.39      0.36        46
+
+    accuracy                           0.81      1103
+   macro avg       0.54      0.68      0.58      1103
+weighted avg       0.88      0.81      0.83      1103
+
+Confusion Matrix:
+[[ 20   0   9   0   0   0   1]
+ [ 11  21   3   0   0   0   0]
+ [  9   0  70   3   1   0   5]
+ [  0   0   0   5   2   0   1]
+ [ 11   6  73  12 747   5  29]
+ [  0   0   0   1   1  11   0]
+ [  7   0  16   1   4   0  18]]
+== On test data ==
+Test Accuracy: 80.8704%
+Precision: 0.5385
+Recall: 0.6815
+F1 Score: 0.5766
+finished with : CvtForImageClassification
+
+
+
+
+
+ ## running model      :    EfficientFormerForImageClassification        ## 
+
+
+
+ == EfficientFormerForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.60691], [train acc 0.77475]
+[epoch 1], [val loss 0.66404], [val acc 0.74786], [avg inference time per image 0.00037 seconds]
+*****************************************************
+model_name : EfficientFormerForImageClassification
+avg_inference_time : 0.0003714049175881518
+best record: [epoch 1], [val loss 0.66404], [val acc 0.74786], [avg inference time per image 0.00037 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.31006], [train acc 0.88378]
+[epoch 2], [val loss 0.34104], [val acc 0.89006], [avg inference time per image 0.00038 seconds]
+*****************************************************
+model_name : EfficientFormerForImageClassification
+avg_inference_time : 0.00038409038554076594
+best record: [epoch 2], [val loss 0.34104], [val acc 0.89006], [avg inference time per image 0.00038 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.22574], [train acc 0.91703]
+[epoch 3], [val loss 0.35677], [val acc 0.89417], [avg inference time per image 0.00038 seconds]
+*****************************************************
+model_name : EfficientFormerForImageClassification
+avg_inference_time : 0.00037940026194208446
+best record: [epoch 3], [val loss 0.35677], [val acc 0.89417], [avg inference time per image 0.00038 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.54      0.70      0.61        30
+         bcc       0.81      0.83      0.82        35
+         bkl       0.62      0.81      0.70        88
+          df       0.44      0.50      0.47         8
+          nv       0.98      0.92      0.95       883
+        vasc       0.62      0.77      0.69        13
+         mel       0.36      0.46      0.40        46
+
+    accuracy                           0.88      1103
+   macro avg       0.62      0.71      0.66      1103
+weighted avg       0.90      0.88      0.89      1103
+
+Confusion Matrix:
+[[ 21   1   6   0   1   1   0]
+ [  2  29   2   2   0   0   0]
+ [  8   2  71   1   4   0   2]
+ [  1   0   2   4   1   0   0]
+ [  2   3  23   2 812   5  36]
+ [  0   0   1   0   2  10   0]
+ [  5   1  10   0   9   0  21]]
+== On test data ==
+Test Accuracy: 87.7607%
+Precision: 0.6238
+Recall: 0.7115
+F1 Score: 0.6620
+finished with : EfficientFormerForImageClassification
+
+
+
+
+
+ ## running model      :    PvtV2ForImageClassification        ## 
+
+
+
+ == PvtV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 1.90027], [train acc 0.20338]
+[epoch 1], [val loss 1.73797], [val acc 0.80256], [avg inference time per image 0.00049 seconds]
+*****************************************************
+model_name : PvtV2ForImageClassification
+avg_inference_time : 0.0004940793823352859
+best record: [epoch 1], [val loss 1.73797], [val acc 0.80256], [avg inference time per image 0.00049 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 1.94328], [train acc 0.15778]
+[epoch 2], [val loss 1.90860], [val acc 0.04107], [avg inference time per image 0.00050 seconds]
+[epoch 3], [iter 1000 / 1221], [train loss 1.94363], [train acc 0.15950]
+[epoch 3], [val loss 1.94732], [val acc 0.07958], [avg inference time per image 0.00049 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.00      0.00      0.00        30
+         bcc       0.00      0.00      0.00        35
+         bkl       0.08      1.00      0.15        88
+          df       0.00      0.00      0.00         8
+          nv       0.00      0.00      0.00       883
+        vasc       0.00      0.00      0.00        13
+         mel       0.00      0.00      0.00        46
+
+    accuracy                           0.08      1103
+   macro avg       0.01      0.14      0.02      1103
+weighted avg       0.01      0.08      0.01      1103
+
+Confusion Matrix:
+[[  0   0  30   0   0   0   0]
+ [  0   0  35   0   0   0   0]
+ [  0   0  88   0   0   0   0]
+ [  0   0   8   0   0   0   0]
+ [  0   0 883   0   0   0   0]
+ [  0   0  13   0   0   0   0]
+ [  0   0  46   0   0   0   0]]
+== On test data ==
+Test Accuracy: 7.9782%
+Precision: 0.0114
+Recall: 0.1429
+F1 Score: 0.0211
+finished with : PvtV2ForImageClassification
+
+
+
+
+
+ ## running model      :    MobileViTV2ForImageClassification        ## 
+
+
+
+ == MobileViTV2ForImageClassification ==
+[epoch 1], [iter 1000 / 1221], [train loss 0.55009], [train acc 0.79769]
+[epoch 1], [val loss 0.36427], [val acc 0.86851], [avg inference time per image 0.00064 seconds]
+*****************************************************
+model_name : MobileViTV2ForImageClassification
+avg_inference_time : 0.000639014533726821
+best record: [epoch 1], [val loss 0.36427], [val acc 0.86851], [avg inference time per image 0.00064 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.26972], [train acc 0.90156]
+[epoch 2], [val loss 0.33529], [val acc 0.89363], [avg inference time per image 0.00051 seconds]
+*****************************************************
+model_name : MobileViTV2ForImageClassification
+avg_inference_time : 0.0005091518460893674
+best record: [epoch 2], [val loss 0.33529], [val acc 0.89363], [avg inference time per image 0.00051 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.20024], [train acc 0.92781]
+[epoch 3], [val loss 0.35297], [val acc 0.89083], [avg inference time per image 0.00053 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.80      0.67      0.73        30
+         bcc       0.91      0.89      0.90        35
+         bkl       0.71      0.78      0.75        88
+          df       0.71      0.62      0.67         8
+          nv       0.97      0.92      0.95       883
+        vasc       1.00      0.62      0.76        13
+         mel       0.31      0.63      0.41        46
+
+    accuracy                           0.88      1103
+   macro avg       0.77      0.73      0.74      1103
+weighted avg       0.92      0.88      0.90      1103
+
+Confusion Matrix:
+[[ 20   2   3   0   1   0   4]
+ [  0  31   2   0   0   0   2]
+ [  3   1  69   0   9   0   6]
+ [  0   0   0   5   2   0   1]
+ [  1   0  14   2 814   0  52]
+ [  0   0   1   0   3   8   1]
+ [  1   0   8   0   8   0  29]]
+== On test data ==
+Test Accuracy: 88.4859%
+Precision: 0.7736
+Recall: 0.7327
+F1 Score: 0.7369
+finished with : MobileViTV2ForImageClassification
+
+
+
+
+
+ ## running model      :    resnet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 1.08631], [train acc 0.59381]
+[epoch 1], [val loss 0.55631], [val acc 0.79429], [avg inference time per image 0.00037 seconds]
+*****************************************************
+model_name : resnet
+avg_inference_time : 0.0003680610051505261
+best record: [epoch 1], [val loss 0.55631], [val acc 0.79429], [avg inference time per image 0.00037 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.72163], [train acc 0.72725]
+[epoch 2], [val loss 0.36839], [val acc 0.87476], [avg inference time per image 0.00034 seconds]
+*****************************************************
+model_name : resnet
+avg_inference_time : 0.00034209910243182214
+best record: [epoch 2], [val loss 0.36839], [val acc 0.87476], [avg inference time per image 0.00034 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.57144], [train acc 0.78191]
+[epoch 3], [val loss 0.68305], [val acc 0.74696], [avg inference time per image 0.00036 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.65      0.57      0.61        30
+         bcc       0.72      0.83      0.77        35
+         bkl       0.34      0.78      0.48        88
+          df       0.26      0.88      0.40         8
+          nv       1.00      0.75      0.86       883
+        vasc       0.83      0.77      0.80        13
+         mel       0.22      0.61      0.32        46
+
+    accuracy                           0.75      1103
+   macro avg       0.58      0.74      0.60      1103
+weighted avg       0.89      0.75      0.79      1103
+
+Confusion Matrix:
+[[ 17   3   6   0   0   0   4]
+ [  3  29   2   0   0   0   1]
+ [  2   0  69   1   1   0  15]
+ [  0   0   1   7   0   0   0]
+ [  3   7 109  18 664   2  80]
+ [  0   0   2   0   0  10   1]
+ [  1   1  13   1   2   0  28]]
+== On test data ==
+Test Accuracy: 74.7053%
+Precision: 0.5751
+Recall: 0.7406
+F1 Score: 0.6047
+finished with : resnet
+
+
+
+
+
+ ## running model      :    vgg        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 1.06948], [train acc 0.59766]
+[epoch 1], [val loss 0.67461], [val acc 0.77911], [avg inference time per image 0.00009 seconds]
+*****************************************************
+model_name : vgg
+avg_inference_time : 8.967607970250702e-05
+best record: [epoch 1], [val loss 0.67461], [val acc 0.77911], [avg inference time per image 0.00009 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.71917], [train acc 0.72922]
+[epoch 2], [val loss 0.84383], [val acc 0.71280], [avg inference time per image 0.00009 seconds]
+[epoch 3], [iter 1000 / 1221], [train loss 0.59658], [train acc 0.77334]
+[epoch 3], [val loss 0.56882], [val acc 0.77631], [avg inference time per image 0.00009 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.31      0.27      0.29        30
+         bcc       0.45      0.86      0.59        35
+         bkl       0.56      0.62      0.59        88
+          df       0.36      0.50      0.42         8
+          nv       0.99      0.82      0.89       883
+        vasc       1.00      1.00      1.00        13
+         mel       0.22      0.74      0.33        46
+
+    accuracy                           0.79      1103
+   macro avg       0.56      0.69      0.59      1103
+weighted avg       0.88      0.79      0.82      1103
+
+Confusion Matrix:
+[[  8   8   5   2   0   0   7]
+ [  0  30   3   1   0   0   1]
+ [  4   4  55   1   6   0  18]
+ [  1   0   2   4   0   0   1]
+ [ 11  22  29   3 722   0  96]
+ [  0   0   0   0   0  13   0]
+ [  2   2   5   0   3   0  34]]
+== On test data ==
+Test Accuracy: 78.5131%
+Precision: 0.5551
+Recall: 0.6865
+F1 Score: 0.5884
+finished with : vgg
+
+
+
+
+
+ ## running model      :    densenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.84501], [train acc 0.68219]
+[epoch 1], [val loss 0.39960], [val acc 0.85411], [avg inference time per image 0.00084 seconds]
+*****************************************************
+model_name : densenet
+avg_inference_time : 0.0008351595317463603
+best record: [epoch 1], [val loss 0.39960], [val acc 0.85411], [avg inference time per image 0.00084 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.54811], [train acc 0.79091]
+[epoch 2], [val loss 0.37869], [val acc 0.85524], [avg inference time per image 0.00077 seconds]
+*****************************************************
+model_name : densenet
+avg_inference_time : 0.0007716976072392676
+best record: [epoch 2], [val loss 0.37869], [val acc 0.85524], [avg inference time per image 0.00077 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.43771], [train acc 0.83300]
+[epoch 3], [val loss 0.41962], [val acc 0.82732], [avg inference time per image 0.00084 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.60      0.50      0.55        30
+         bcc       0.58      0.83      0.68        35
+         bkl       0.65      0.80      0.71        88
+          df       0.60      0.75      0.67         8
+          nv       0.98      0.85      0.91       883
+        vasc       0.91      0.77      0.83        13
+         mel       0.24      0.72      0.36        46
+
+    accuracy                           0.83      1103
+   macro avg       0.65      0.74      0.67      1103
+weighted avg       0.90      0.83      0.85      1103
+
+Confusion Matrix:
+[[ 15   5   8   0   1   0   1]
+ [  1  29   3   1   0   1   0]
+ [  3   2  70   1   4   0   8]
+ [  1   0   0   6   1   0   0]
+ [  5  11  21   2 751   0  93]
+ [  0   0   0   0   2  10   1]
+ [  0   3   6   0   4   0  33]]
+== On test data ==
+Test Accuracy: 82.8649%
+Precision: 0.6520
+Recall: 0.7445
+F1 Score: 0.6739
+finished with : densenet
+
+
+
+
+
+ ## running model      :    googlenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.80509], [train acc 0.69819]
+[epoch 1], [val loss 0.40656], [val acc 0.86774], [avg inference time per image 0.00038 seconds]
+*****************************************************
+model_name : googlenet
+avg_inference_time : 0.00038499672198879213
+best record: [epoch 1], [val loss 0.40656], [val acc 0.86774], [avg inference time per image 0.00038 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.51647], [train acc 0.80466]
+[epoch 2], [val loss 0.45221], [val acc 0.83369], [avg inference time per image 0.00056 seconds]
+[epoch 3], [iter 1000 / 1221], [train loss 0.40684], [train acc 0.84822]
+[epoch 3], [val loss 0.42446], [val acc 0.85310], [avg inference time per image 0.00051 seconds]
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.43      0.53      0.48        30
+         bcc       0.60      0.83      0.70        35
+         bkl       0.55      0.75      0.63        88
+          df       0.67      0.50      0.57         8
+          nv       0.98      0.90      0.94       883
+        vasc       1.00      0.77      0.87        13
+         mel       0.31      0.52      0.39        46
+
+    accuracy                           0.85      1103
+   macro avg       0.65      0.69      0.65      1103
+weighted avg       0.89      0.85      0.87      1103
+
+Confusion Matrix:
+[[ 16   6   7   0   0   0   1]
+ [  1  29   5   0   0   0   0]
+ [  9   2  66   0   5   0   6]
+ [  1   0   2   4   1   0   0]
+ [  8   6  30   2 791   0  46]
+ [  0   0   1   0   1  10   1]
+ [  2   5   9   0   6   0  24]]
+== On test data ==
+Test Accuracy: 85.2221%
+Precision: 0.6493
+Recall: 0.6855
+F1 Score: 0.6538
+finished with : googlenet
+
+
+
+
+
+ ## running model      :    efficientnet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.64356], [train acc 0.76397]
+[epoch 1], [val loss 0.30869], [val acc 0.89095], [avg inference time per image 0.00054 seconds]
+*****************************************************
+model_name : efficientnet
+avg_inference_time : 0.0005436503444059481
+best record: [epoch 1], [val loss 0.30869], [val acc 0.89095], [avg inference time per image 0.00054 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.35324], [train acc 0.86956]
+[epoch 2], [val loss 0.33324], [val acc 0.89363], [avg inference time per image 0.00060 seconds]
+*****************************************************
+model_name : efficientnet
+avg_inference_time : 0.0005986774821553788
+best record: [epoch 2], [val loss 0.33324], [val acc 0.89363], [avg inference time per image 0.00060 seconds]
+*****************************************************
+[epoch 3], [iter 1000 / 1221], [train loss 0.25758], [train acc 0.90538]
+[epoch 3], [val loss 0.32279], [val acc 0.90792], [avg inference time per image 0.00056 seconds]
+*****************************************************
+model_name : efficientnet
+avg_inference_time : 0.000558957768264729
+best record: [epoch 3], [val loss 0.32279], [val acc 0.90792], [avg inference time per image 0.00056 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.69      0.60      0.64        30
+         bcc       0.76      0.91      0.83        35
+         bkl       0.72      0.75      0.73        88
+          df       0.70      0.88      0.78         8
+          nv       0.97      0.95      0.96       883
+        vasc       0.77      0.77      0.77        13
+         mel       0.41      0.52      0.46        46
+
+    accuracy                           0.90      1103
+   macro avg       0.72      0.77      0.74      1103
+weighted avg       0.91      0.90      0.91      1103
+
+Confusion Matrix:
+[[ 18   3   6   0   1   0   2]
+ [  1  32   0   2   0   0   0]
+ [  4   2  66   0   9   0   7]
+ [  1   0   0   7   0   0   0]
+ [  1   3  11   1 839   3  25]
+ [  0   1   0   0   2  10   0]
+ [  1   1   9   0  11   0  24]]
+== On test data ==
+Test Accuracy: 90.2992%
+Precision: 0.7183
+Recall: 0.7686
+F1 Score: 0.7396
+finished with : efficientnet
+
+
+
+
+
+ ## running model      :    mobilenet        ## 
+[epoch 1], [iter 1000 / 1221], [train loss 0.80500], [train acc 0.70241]
+[epoch 1], [val loss 0.41249], [val acc 0.84976], [avg inference time per image 0.00037 seconds]
+*****************************************************
+model_name : mobilenet
+avg_inference_time : 0.0003711891952473147
+best record: [epoch 1], [val loss 0.41249], [val acc 0.84976], [avg inference time per image 0.00037 seconds]
+*****************************************************
+[epoch 2], [iter 1000 / 1221], [train loss 0.54346], [train acc 0.79878]
+[epoch 2], [val loss 0.50783], [val acc 0.81280], [avg inference time per image 0.00037 seconds]
+[epoch 3], [iter 1000 / 1221], [train loss 0.44922], [train acc 0.83159]
+[epoch 3], [val loss 0.37876], [val acc 0.87399], [avg inference time per image 0.00038 seconds]
+*****************************************************
+model_name : mobilenet
+avg_inference_time : 0.0003843523649767325
+best record: [epoch 3], [val loss 0.37876], [val acc 0.87399], [avg inference time per image 0.00038 seconds]
+*****************************************************
+classification_report :
+              precision    recall  f1-score   support
+
+       akiec       0.65      0.50      0.57        30
+         bcc       0.61      0.86      0.71        35
+         bkl       0.72      0.61      0.66        88
+          df       0.33      0.88      0.48         8
+          nv       0.98      0.91      0.94       883
+        vasc       0.50      0.77      0.61        13
+         mel       0.31      0.65      0.42        46
+
+    accuracy                           0.86      1103
+   macro avg       0.59      0.74      0.63      1103
+weighted avg       0.90      0.86      0.87      1103
+
+Confusion Matrix:
+[[ 15   5   5   1   2   0   2]
+ [  1  30   3   1   0   0   0]
+ [  4   3  54   4   9   0  14]
+ [  1   0   0   7   0   0   0]
+ [  1   8   6   7 800  10  51]
+ [  0   0   0   1   2  10   0]
+ [  1   3   7   0   5   0  30]]
+== On test data ==
+Test Accuracy: 85.7661%
+Precision: 0.5864
+Recall: 0.7390
+F1 Score: 0.6274
+finished with : mobilenet
+= = = = = = = = execution finished = = = = = = = = = = = = =
